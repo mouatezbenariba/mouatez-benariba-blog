@@ -98,16 +98,21 @@ section.featured-articles {
 }
 
 /* footer */
-.footer {
-  border-top: 1px solid #7a1f1f;
+.footer .container {
+  border-top: 2px solid #7a1f1f;
 }
+
+.footer p {
+  margin: 0;
+}
+
 @media screen and (min-width: 320px) {
   header .container {
     display: flex;
     justify-content: space-between;
   }
 
-  .footer {
+  .footer .container {
     display: flex;
     justify-content: space-between;
   }
