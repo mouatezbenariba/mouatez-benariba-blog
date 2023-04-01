@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css">
-  <title>example</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <title>Elmouatez Benariba Billah Blog</title>
 </head>
 <body>
   <header>
@@ -150,5 +151,17 @@
         </ul>
       </div>
 </footer>
+
+  <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>
