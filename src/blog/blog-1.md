@@ -1,3 +1,13 @@
+---
+title: My First Article
+author: Mouatez Benariba
+tags: ['featured']
+date: 2021-06-01
+image: ../assets/images/blog/2023/03/article-01.png
+imageAlt: This is a test
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?
+---
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare suspendisse sed nisi lacus sed viverra tellus. Sit amet venenatis urna cursus eget nunc. In pellentesque massa placerat duis ultricies lacus. Sagittis vitae et leo duis. Id diam vel quam elementum pulvinar etiam non quam. Duis at consectetur lorem donec. Sapien et ligula ullamcorper malesuada proin. Libero id faucibus nisl tincidunt eget nullam. Nunc scelerisque viverra mauris in. Bibendum arcu vitae elementum curabitur vitae nunc sed. Malesuada nunc vel risus commodo viverra. Eu mi bibendum neque egestas congue. Pellentesque habitant morbi tristique senectus et netus. Quis imperdiet massa tincidunt nunc. Elementum sagittis vitae et leo duis ut diam. Ut morbi tincidunt augue interdum velit euismod in pellentesque massa. Bibendum enim facilisis gravida neque convallis a cras. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam.
 
 Quam quisque id diam vel quam elementum pulvinar etiam. Feugiat scelerisque varius morbi enim nunc faucibus. Morbi tempus iaculis urna id volutpat lacus laoreet non curabitur. Egestas purus viverra accumsan in nisl. Praesent tristique magna sit amet purus. Commodo ullamcorper a lacus vestibulum sed arcu non odio euismod. Sit amet mauris commodo quis imperdiet. Tempor commodo ullamcorper a lacus. Fringilla ut morbi tincidunt augue interdum velit euismod in. Viverra orci sagittis eu volutpat. Tincidunt praesent semper feugiat nibh sed. Integer vitae justo eget magna fermentum iaculis eu non diam. Purus ut faucibus pulvinar elementum. Maecenas sed enim ut sem viverra aliquet eget sit.

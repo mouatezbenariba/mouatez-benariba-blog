@@ -1,0 +1,19 @@
+---
+title: Blog
+layout: 'base.njk'
+pagination: 
+  data: collections.post
+  size: 3
+  alias: posts
+---
+
+<div>
+  <h1>Recent Articles</h1>
+  <ul class="articles">
+      {%- for post in posts | reverse -%}
+        {% include "article-snippets.njk" %}
+      {%- endfor -%}
+  </ul>
+  {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous Page</a>{% endif %} 
+  {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next page</a>{% endif %} 
+</div>
