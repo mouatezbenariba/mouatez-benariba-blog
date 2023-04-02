@@ -1,5 +1,7 @@
 const { DateTime } = require('luxon');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const Prism = require('prismjs');
+require('prismjs/components/')(); // load all Prism.js components
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/css/style.css');
@@ -26,6 +28,12 @@ module.exports = function (eleventyConfig) {
     });
 
     return [...tagSet];
+  });
+
+  // Syntax highlight using prism
+  eleventyConfig.addFilter('highlight', function (code, lang) {
+    const highlightedCode = Prism.highlight(code, Prism.languages[lang], lang);
+    return `<pre><code class="language-${lang}">${highlightedCode}</code></pre>`;
   });
 
   return {
