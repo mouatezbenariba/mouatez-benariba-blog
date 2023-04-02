@@ -10,10 +10,10 @@ pagination:
 <div>
   <h1>Recent Articles</h1>
   <ul class="articles">
-      {%- for post in posts | reverse -%}
+      {%- for post in posts -%}
         {% include "article-snippets.njk" %}
       {%- endfor -%}
   </ul>
-  {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous Page</a>{% endif %} 
-  {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next page</a>{% endif %} 
+  {# {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous Page</a>{% endif %} 
+  {% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next page</a>{% endif %}  #}
 </div>
