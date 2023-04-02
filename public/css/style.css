@@ -10,6 +10,7 @@
 body {
   font-family: Helvetica, Sans-Serif;
   background-color: #8600ff14;
+  margin: 1rem 2rem;
 }
 
 /* reset */
@@ -34,7 +35,6 @@ a {
 /* utility  classes */
 .container {
   max-width: 1000px;
-  padding: 1rem 0;
   margin: auto;
 }
 
@@ -88,10 +88,6 @@ header .blog-name {
 }
 /* main */
 /* Discover Per tag */
-.container {
-  padding: 1rem;
-}
-
 .tags {
   text-align: center;
 }
