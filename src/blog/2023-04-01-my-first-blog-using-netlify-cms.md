@@ -1,7 +1,9 @@
 ---
+author: Elmouatez Billah Benariba
+imageAlt: Hello this is a required field
+ImageAlt: This is our image caption
 title: My first Blog using Netlify CMS
 description: Hello, this is my first blog created using netlify cms, stay tuned.
-author: Elmouatez Billah Benariba
 date: 2023-04-01T21:51:11.896Z
 tags:
   - post
@@ -9,7 +11,7 @@ tags:
   - css
   - featured
 Image: /assets/blog/clean-code-feature.png
-ImageAlt: This is our image caption
+image: /assets/blog/clean-code-feature.png
 ---
 # H﻿ello
 
