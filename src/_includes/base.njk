@@ -10,11 +10,13 @@
   <title>{{ title }}</title>
 </head>
 <body>
-  {% include 'header.njk' %}
+  <div class="container">
+    {% include 'header.njk' %}
   <main>
     {{ content | safe }}
   </main>
-  {% include 'footer.njk' %}
+    {% include 'footer.njk' %}
+  </div>
 
   <script>
   if (window.netlifyIdentity) {
