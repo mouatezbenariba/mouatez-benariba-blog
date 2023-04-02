@@ -53,7 +53,6 @@ header .blog-name {
 .nav-list {
   display: flex;
   justify-content: center;
-  margin: 1rem;
 }
 
 .nav-list__item:not(:last-child) {
@@ -90,7 +89,7 @@ header .blog-name {
 /* main */
 /* Discover Per tag */
 .container {
-  padding: 1rem;
+  margin: 1rem;
 }
 
 .tags {
@@ -183,7 +182,6 @@ p.footer__copyright {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
   }
 
   .footer .container {
@@ -204,7 +202,16 @@ p.footer__copyright {
   .article {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
+  }
+
+  .article__thumbnail {
+    flex-basis: 30%;
+  }
+
+  .article__info {
+    flex-basis: 60%;
   }
 }
 
