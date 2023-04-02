@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: 'public/assets/blog'
-public_folder: '/assets/blog'
+media_folder: 'public/assets/images/blog'
+public_folder: '/assets/images/blog'
 collections:
   - name: 'blog'
     label: 'Blog'
@@ -11,10 +11,10 @@ collections:
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'author', name: 'author', widget: 'string' }
-      - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Tags', name: 'tags', widget: 'list', default: ['post'] }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Featured Image', name: 'image', widget: 'image' }
       - { label: 'Image caption', name: 'imageAlt', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
