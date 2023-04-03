@@ -1,23 +1,22 @@
-/* PrismJS 1.29.0
-https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript */
 /**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
+ * Gruvbox dark theme
+ *
+ * Adapted from a theme based on:
+ * Vim Gruvbox dark Theme (https://github.com/morhetz/gruvbox)
+ *
+ * @author Azat S. <to@azat.io>
+ * @version 1.0
  */
 
 code[class*='language-'],
 pre[class*='language-'] {
-  color: black;
-  background: none;
-  text-shadow: 0 1px white;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  font-size: 1em;
+  color: #ebdbb2; /* fg1 / fg */
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  direction: ltr;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
-  word-wrap: normal;
   line-height: 1.5;
 
   -moz-tab-size: 4;
@@ -34,23 +33,16 @@ pre[class*='language-']::-moz-selection,
 pre[class*='language-'] ::-moz-selection,
 code[class*='language-']::-moz-selection,
 code[class*='language-'] ::-moz-selection {
-  text-shadow: none;
-  background: #b3d4fc;
+  color: #fbf1c7; /* fg0 */
+  background: #7c6f64; /* bg4 */
 }
 
 pre[class*='language-']::selection,
 pre[class*='language-'] ::selection,
 code[class*='language-']::selection,
 code[class*='language-'] ::selection {
-  text-shadow: none;
-  background: #b3d4fc;
-}
-
-@media print {
-  code[class*='language-'],
-  pre[class*='language-'] {
-    text-shadow: none;
-  }
+  color: #fbf1c7; /* fg0 */
+  background: #7c6f64; /* bg4 */
 }
 
 /* Code blocks */
@@ -62,85 +54,90 @@ pre[class*='language-'] {
 
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
-  background: #f5f2f0;
+  background: #1d2021; /* bg0_h */
 }
 
 /* Inline code */
 :not(pre) > code[class*='language-'] {
   padding: 0.1em;
   border-radius: 0.3em;
-  white-space: normal;
 }
 
 .token.comment,
 .token.prolog,
-.token.doctype,
 .token.cdata {
-  color: slategray;
+  color: #a89984; /* fg4 / gray1 */
 }
 
-.token.punctuation {
-  color: #999;
-}
-
-.token.namespace {
-  opacity: 0.7;
-}
-
-.token.property,
-.token.tag,
+.token.delimiter,
 .token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
-  color: #905;
-}
-
+.token.keyword,
 .token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-  color: #690;
+.token.important,
+.token.atrule {
+  color: #fb4934; /* red2 */
 }
 
 .token.operator,
+.token.punctuation,
+.token.attr-name {
+  color: #a89984; /* fg4 / gray1 */
+}
+
+.token.tag,
+.token.tag .punctuation,
+.token.doctype,
+.token.builtin {
+  color: #fabd2f; /* yellow2 */
+}
+
 .token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string {
-  color: #9a6e3a;
-  /* This background color was intended by the author of this theme. */
-  background: hsla(0, 0%, 100%, 0.5);
+.token.number,
+.token.symbol {
+  color: #d3869b; /* purple2 */
 }
 
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-  color: #07a;
-}
-
-.token.function,
-.token.class-name {
-  color: #dd4a68;
-}
-
-.token.regex,
-.token.important,
+.token.property,
+.token.constant,
 .token.variable {
-  color: #e90;
+  color: #fb4934; /* red2 */
 }
 
-.token.important,
+.token.string,
+.token.char {
+  color: #b8bb26; /* green2 */
+}
+
+.token.attr-value,
+.token.attr-value .punctuation {
+  color: #a89984; /* fg4 / gray1 */
+}
+
+.token.url {
+  color: #b8bb26; /* green2 */
+  text-decoration: underline;
+}
+
+.token.function {
+  color: #fabd2f; /* yellow2 */
+}
+
+.token.regex {
+  background: #b8bb26; /* green2 */
+}
+
 .token.bold {
   font-weight: bold;
 }
+
 .token.italic {
   font-style: italic;
 }
 
-.token.entity {
-  cursor: help;
+.token.inserted {
+  background: #a89984; /* fg4 / gray1 */
+}
+
+.token.deleted {
+  background: #fb4934; /* red2 */
 }
