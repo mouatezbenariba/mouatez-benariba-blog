@@ -2,13 +2,12 @@
 layout: 'base.njk'
 ---
 
-<h1>Tags</h1>
-
-<ul>
-  {% for tag in collections.tagList%}
-    {% set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
-    <li>
-      <a href="{{ tagUrl | url }}">{{ tag }}</a> ({{ collections[tag].length }})
-    </li>
-  {% endfor %}
-</ul>
+{% for post in collections.posts %}
+  {% if post.data.tags and post.data.tags | contains(tag) %}
+    <div class="blog-post">
+      <h2>{{ post.data.title }}</h2>
+      <p>{{ post.templateContent | truncate(100) }}</p>
+      <a href="/blog/{{ post.fileSlug }}">Read more...</a>
+    </div>
+  {% endif %}
+{% endfor %}
