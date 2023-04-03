@@ -1,0 +1,21 @@
+---
+layout: base.njk
+pagination:
+  data: collections.tag[tag]
+  size: 10
+  alias: posts
+permalink: /tags/{{ tag | slug }}/page/{{ pagination.pageNumber }}/index.html
+---
+<section class="blog-posts">
+  <h1>Posts tagged with "{{ tag }}"</h1>
+  {% for post in posts %}
+    <article>
+      <h2>{{ post.data.title }}</h2>
+      <p>{{ post.data.date | date("MMMM DD, YYYY") }}</p>
+      <p>{{ post.data.description }}</p>
+      <a href="{{ post.url }}">Read more</a>
+    </article>
+  {% endfor %}
+</section>
+
+{% include "pagination.njk" %}
