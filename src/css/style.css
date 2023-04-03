@@ -36,6 +36,7 @@ a {
 .container {
   max-width: 1000px;
   margin: auto;
+  padding: 1rem 0;
 }
 
 /* main style */
