@@ -14,14 +14,9 @@ permalink: /tags/{{ tag | slug }}/
 ---
 <section class="blog-posts">
   <h1>Posts tagged with "{{ tag }}"</h1>
-  {% for post in posts %}
-    <article>
-      <h2>{{ post.data.title }}</h2>
-      <p>{{ post.data.date | date("MMMM DD, YYYY") }}</p>
-      <p>{{ post.data.description }}</p>
-      <a href="{{ post.url }}">Read more</a>
-    </article>
-  {% endfor %}
+    {%- for post in collections[tag] -%}
+      {% include "article-snippets.njk" %}
+    {%- endfor -%}
 </section>
 
 {% include "pagination.njk" %}
