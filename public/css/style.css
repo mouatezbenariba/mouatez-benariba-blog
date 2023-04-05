@@ -10,7 +10,6 @@
 body {
   font-family: Helvetica, Sans-Serif;
   background-color: #8600ff14;
-  margin: 1rem 2rem;
 }
 
 /* reset */
@@ -36,7 +35,6 @@ a {
 .container {
   max-width: 1000px;
   margin: auto;
-  padding: 1rem 0;
 }
 
 /* main style */

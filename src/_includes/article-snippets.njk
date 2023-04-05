@@ -12,7 +12,7 @@
     <span class="article__tags">
       tagged:
       {% for tag in post.data.tags | excludeTags %}
-        <span class="tag">{{ tag }}</span>
+        <span class="tag"><a href="/tags/{{ tag | slug }}">{{ tag }}</a></span>
       {% endfor %}
     </span>
   </div>
