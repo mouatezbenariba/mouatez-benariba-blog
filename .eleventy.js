@@ -14,6 +14,16 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(syntaxHighlight);
 
+  function filterTagList(tags) {
+    return (tags || []).filter(
+      (tag) => ['all', 'nav', 'post', 'posts'].indexOf(tag) === -1
+    );
+  }
+
+  eleventyConfig.addFilter('excludeTags', function (tags) {
+    return filterTagList(tags);
+  });
+
   // create an array of unique tags from your blog posts
   eleventyConfig.addCollection('tagList', function (collection) {
     const tagSet = new Set();
@@ -27,7 +37,7 @@ module.exports = function (eleventyConfig) {
       }
     });
 
-    return [...tagSet];
+    return filterTagList([...tagSet]);
   });
 
   // Syntax highlight using prism

@@ -4,7 +4,6 @@ layout: 'base.njk'
 
 <ul>
   {% for tag in collections.tagList %}
-    <li><a href="/tags/{{ tag | slug }}">#{{ tag }}</a></li>
-    <p>yes</p>
+    <li><a href="/tags/{{ tag | slug }}" class="{{tag}}">#{{ tag }}</a></li>
   {% endfor %}
 </ul>
