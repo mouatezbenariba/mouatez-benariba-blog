@@ -39,8 +39,12 @@ a {
 
 /* main style */
 /* header */
-header .container {
+header {
+  padding: 1rem 0;
   border-bottom: 1px solid #808080;
+}
+
+header .container {
   text-align: center;
 }
 
@@ -65,6 +69,11 @@ header .blog-name {
   color: white;
   font-weight: bold;
 }
+/* main */
+
+main {
+  padding: 2rem 0;
+}
 
 .welcome {
   text-align: center;
@@ -85,7 +94,7 @@ header .blog-name {
 .media__info {
   font-size: 1.5rem;
 }
-/* main */
+
 /* Discover Per tag */
 .tags {
   text-align: center;
@@ -138,7 +147,8 @@ section.featured-articles {
 }
 
 /* footer */
-.footer .container {
+footer {
+  padding: 1rem 0;
   border-top: 1px solid #808080;
 }
 
