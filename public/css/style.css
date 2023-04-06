@@ -72,6 +72,7 @@ header .blog-name {
 /* main */
 
 main {
+  min-height: calc(100vh - 15rem);
   padding: 2rem 0;
 }
 
