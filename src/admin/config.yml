@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main
+  access_token: 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
 media_folder: 'public/assets/images/blog'
 public_folder: '/assets/images/blog'
 collections:
