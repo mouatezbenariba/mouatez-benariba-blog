@@ -1,0 +1,22 @@
+---
+title: Blog
+layout: 'ar/base.njk'
+pagination: 
+  data: collections.post
+  size: 3
+  alias: posts
+---
+
+  <div>
+  <h1>مقالاتي</h1>
+    <h2>تصفح المقالات حسب <a href="/ar/tags/"><span style="color: lightseagreen;">الوسم</span></a></h2>
+  <ul class="articles">
+      {%- for post in posts -%}
+        {% if post.data.language == "ar" %}
+          {% include "ar/article-snippets.njk" %}
+        {% endif %}
+      {%- endfor -%}
+
+  </ul>
+    {% include "ar/pagination.njk" %}
+  </div>
