@@ -1,0 +1,31 @@
+---
+title: Elmouatez Benariba Billah Blog
+layout: 'ar/base.njk'
+---
+
+    <div class="">
+      <section class="welcome">
+        <div class="welcome__text">
+          <p>مرحبا بك في مدونتي!</p>
+        </div>
+        <div class="welcome__media">
+          <picture>
+            <img
+              src="../assets/images/personal-image.webp"
+              alt="mouatez benariba personal image"
+              width="150"
+              class="personal-image"
+            />
+          </picture>
+          <h1 class="media__name">المعتز بالله بن عريبة</h1>
+          <p class="media__info">مطور واجهات أمامية &amp; مهندس في البيوتكنولوجيا</p>
+        </div>
+      </section>
+    </div>
+    <section class="featured-articles">
+    {%- for post in collections.featured | reverse -%}
+      <li>
+        {% include "article-snippets.njk" %}
+      </li>
+    {%- endfor -%}
+    </section>

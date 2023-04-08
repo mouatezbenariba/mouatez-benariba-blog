@@ -9,9 +9,12 @@ pagination:
 
   <div>
   <h1>All Posts</h1>
+  <h2>Browse Posts by <a href="/tags/"><span style="color: lightseagreen;">tags</span></a></h2>
   <ul class="articles">
       {%- for post in posts -%}
-        {% include "article-snippets.njk" %}
+        {% if post.data.language == "en" %}
+          {% include "article-snippets.njk" %}
+        {% endif %}
       {%- endfor -%}
   </ul>
     {% include "pagination.njk" %}

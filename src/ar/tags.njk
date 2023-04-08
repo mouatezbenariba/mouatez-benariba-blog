@@ -1,0 +1,9 @@
+---
+layout: 'ar/base.njk'
+---
+
+<ul>
+  {% for tag in collections.tagList %}
+    <li><a href="/ar/tags/{{ tag | slug }}" class="tag"> {{ tag }} </a></li>
+  {% endfor %}
+</ul>

@@ -9,13 +9,13 @@ pagination:
     - posts
     - tagList
   addAllPagesToCollections: true
-layout: base.njk
-permalink: /tags/{{ tag | slug }}/
+layout: ar/base.njk
+permalink: /ar/tags/{{ tag | slug }}/
 ---
 <section class="blog-posts">
-  <h1>Posts tagged with "{{ tag }}"</h1>
+  <h1>مقالات موسومة بـ: "{{ tag }}"</h1>
     {%- for post in collections[tag] -%}
-      {% if post.data.language == "en" %}
+      {% if post.data.language == "ar" %}
         {% include "article-snippets.njk" %}
       {% endif %}
     {%- endfor -%}
