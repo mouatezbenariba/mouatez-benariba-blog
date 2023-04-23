@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://blog.mouatezbenariba.me/</loc>
+  <lastmod>2023-04-23T23:16:31+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://blog.mouatezbenariba.me/index.html</loc>
+  <lastmod>2023-04-23T23:16:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.mouatezbenariba.me/ar/index.html</loc>
+  <lastmod>2023-04-23T23:16:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.mouatezbenariba.me/all-posts/index.html</loc>
+  <lastmod>2023-04-23T23:16:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://blog.mouatezbenariba.me/ar/all-posts/index.html</loc>
+  <lastmod>2023-04-23T23:16:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.mouatezbenariba.me/tags/</loc>
+  <lastmod>2023-04-23T23:16:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://blog.mouatezbenariba.me/ar/tags/</loc>
+  <lastmod>2023-04-23T23:16:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://blog.mouatezbenariba.me/tags/html/</loc>
+  <lastmod>2023-04-23T23:16:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://blog.mouatezbenariba.me/ar/tags/html/</loc>
+  <lastmod>2023-04-23T23:16:31+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>
