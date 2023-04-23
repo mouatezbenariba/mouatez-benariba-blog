@@ -26,7 +26,7 @@ collections:
         }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'ar-blog'
-    label: 'En-Blog'
+    label: 'Ar-Blog'
     folder: 'src/blog/ar'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
