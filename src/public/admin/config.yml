@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: main
+  access_token: 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
+media_folder: 'public/assets/images/blog'
+public_folder: '/assets/images/blog'
+collections:
+  - name: 'en-blog'
+    label: 'En-Blog'
+    folder: 'src/blog/en'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Language', name: 'language', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'author', name: 'author', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'list', default: ['post'] }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Featured Image', name: 'image', widget: 'image' }
+      - { label: 'Image caption', name: 'imageAlt', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - {
+          label: 'Page Description (metadata)',
+          name: 'pageDescription',
+          widget: 'string',
+        }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'ar-blog'
+    label: 'En-Blog'
+    folder: 'src/blog/ar'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Language', name: 'language', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'author', name: 'author', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'list', default: ['post'] }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Featured Image', name: 'image', widget: 'image' }
+      - { label: 'Image caption', name: 'imageAlt', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - {
+          label: 'Page Description (metadata)',
+          name: 'pageDescription',
+          widget: 'string',
+        }
+      - { label: 'Body', name: 'body', widget: 'markdown' }

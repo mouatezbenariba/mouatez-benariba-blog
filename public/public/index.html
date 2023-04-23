@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<htmlhead meta  lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
   <meta
   name="description"
   content= 
-  />
+/>
   <!-- Open Graph Protocol - Facebook-->
   <meta property="og:url" content="https://mouatezbenariba.me/" />
   <meta property="og:type" content="website" />
@@ -38,111 +38,146 @@
     name="twitter:image"
     content="https://mouatezbenariba.me/assets/images/personal-image/personal-image.webp"
   />
-    <!-- favicons -->
+  <!-- favicons -->
   <link
     rel="apple-touch-icon"
     sizes="57x57"
-    href="/src/assets/favicons/apple-icon-57x57.png"
+    href="/assets/favicons/apple-icon-57x57.png"
   />
   <link
     rel="apple-touch-icon"
     sizes="60x60"
-    href="/src/assets/favicons/apple-icon-60x60.png"
+    href="/assets/favicons/apple-icon-60x60.png"
   />
   <link
     rel="apple-touch-icon"
     sizes="72x72"
-    href="/src/assets/favicons/apple-icon-72x72.png"
+    href="/assets/favicons/apple-icon-72x72.png"
   />
   <link
     rel="apple-touch-icon"
     sizes="76x76"
-    href="/src/assets/favicons/apple-icon-76x76.png"
+    href="/assets/favicons/apple-icon-76x76.png"
   />
   <link
     rel="apple-touch-icon"
     sizes="114x114"
-    href="/src/assets/favicons/apple-icon-114x114.png"
+    href="/assets/favicons/apple-icon-114x114.png"
   />
   <link
     rel="apple-touch-icon"
     sizes="120x120"
-    href="/src/assets/favicons/apple-icon-120x120.png"
+    href="/assets/favicons/apple-icon-120x120.png"
   />
   <link
     rel="apple-touch-icon"
     sizes="144x144"
-    href="/src/assets/favicons/apple-icon-144x144.png"
+    href="/assets/favicons/apple-icon-144x144.png"
   />
   <link
     rel="apple-touch-icon"
     sizes="152x152"
-    href="/src/assets/favicons/apple-icon-152x152.png"
+    href="/assets/favicons/apple-icon-152x152.png"
   />
   <link
     rel="apple-touch-icon"
     sizes="180x180"
-    href="/src/assets/favicons/apple-icon-180x180.png"
+    href="/assets/favicons/apple-icon-180x180.png"
   />
   <link
     rel="icon"
     type="image/png"
     sizes="192x192"
-    href="/src/assets/favicons/android-icon-192x192.png"
+    href="/assets/favicons/android-icon-192x192.png"
   />
   <link
     rel="icon"
     type="image/png"
     sizes="32x32"
-    href="/src/assets/favicons/favicon-32x32.png"
+    href="/assets/favicons/favicon-32x32.png"
   />
   <link
     rel="icon"
     type="image/png"
     sizes="96x96"
-    href="/src/assets/favicons/favicon-96x96.png"
+    href="/assets/favicons/favicon-96x96.png"
   />
   <link
     rel="icon"
     type="image/png"
     sizes="16x16"
-    href="/src/assets/favicons/favicon-16x16.png"
+    href="/assets/favicons/favicon-16x16.png"
   />
-  <link rel="manifest" href="/src/manifest.json" />
+  <link rel="manifest" href="/manifest.json" />
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
-
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/assets/syntaxhighlight/prism-gruvbox-dark.css">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <script src="/assets/syntaxhighlight/prism.js"></script>
-  <title></title>
+  <!-- preload font files -->
+  <link
+    rel="preload"
+    href="/assets/fonts/cabinet-grotesk/CabinetGrotesk-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <title>Elmouatez Benariba Billah Blog</title>
+  <!-- internal style -->
+  <style>
+    /* fonts */
+    @font-face {
+      font-family: 'CabinetGrotesk-Regular';
+      src: url(/assets/fonts/cabinet-grotesk/CabinetGrotesk-Regular.woff2);
+      font-display: optional;
+    }
+    body {
+      font-family: 'CabinetGrotesk-Regular';
+    }
+  </style>
 </head>
-<body dir="rtl">
-      <header>
-  <div class="container ar">
-    <a href="/index.html" class="blog-name">مدونة المعتز بالله بن عريبة</a>
+<body>
+    <header>
+  <div class="container">
+    <a href="/index.html" class="blog-name">Mouatez Benariba Blog</a>
     <nav>
       <ul class="nav-list">
-        <li class="nav-list__item"><a href="/index.html">الإنجليزية</a></li>
-        <li class="nav-list__item"><a href="/ar/all-posts/index.html">المقالات</a></li>
-        <li class="nav-list__item"><a href="https://mouatezbenariba.me/">الموقع</a></li>
+        <li class="nav-list__item"><a href="/ar/index.html">Arabic</a></li>
+        <li class="nav-list__item"><a href="/all-posts/index.html">Posts</a></li>
+        <li class="nav-list__item"><a href="https://mouatezbenariba.me/">Portfolio</a></li>
       </ul>
     </nav>
   </div>
 </header>
   <main>
     
-<ul>
-  
-</ul>
-
+    <div class="">
+      <section class="welcome">
+        <div class="welcome__text">
+          <p>Welcome to my blog!</p>
+        </div>
+        <div class="welcome__media">
+          <picture>
+            <img
+              src="./assets/images/personal-image/personal-image.webp"
+              alt="mouatez benariba personal image"
+              width="150"
+              class="personal-image"
+            />
+          </picture>
+          <h1 class="media__name">Elmouatez Billah Benariba</h1>
+          <p class="media__info">Frontend Developer &amp; Biotechnology Engineer</p>
+        </div>
+      </section>
+    </div>
+    <section class="featured-articles"></section>
   </main>
     <footer class="footer">
-<div class="container ar">
+<div class="container">
         <p class="footer__copyright">
-          © المعتز بالله بن عريبة 2023-اليوم. <b>جميع الحقوق محفوظة.</b>
+          © Elmouatez Billah Benariba 2023-Today. <b>All rights reserved.</b>
         </p>
         <ul class="footer__links">
           <li>
@@ -206,4 +241,4 @@
   Prism.highlightAll();
 </script>
 </body>
-</htmlhead>
+</html>
