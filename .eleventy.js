@@ -9,6 +9,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/admin/config.yml');
   eleventyConfig.addPassthroughCopy('./src/manifest.json');
   eleventyConfig.addPassthroughCopy('./src/netlify.toml');
+  eleventyConfig.addPassthroughCopy('./src/Robots.txt');
 
   eleventyConfig.addFilter('postDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
