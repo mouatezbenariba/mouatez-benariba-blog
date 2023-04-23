@@ -99,7 +99,7 @@ header .blog-name {
 
 /* main */
 main {
-  min-height: calc(100vh - 12.9rem);
+  min-height: calc(100vh - 10.1rem);
   padding: 2rem 0;
 }
 
