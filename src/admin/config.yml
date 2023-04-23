@@ -19,6 +19,11 @@ collections:
       - { label: 'Featured Image', name: 'image', widget: 'image' }
       - { label: 'Image caption', name: 'imageAlt', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
+      - {
+          label: 'Page Description (metadata)',
+          name: 'pageDescription',
+          widget: 'string',
+        }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'ar-blog'
     label: 'En-Blog'
