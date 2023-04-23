@@ -116,16 +116,34 @@
   <link rel="stylesheet" href="/assets/syntaxhighlight/prism-gruvbox-dark.css">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
   <script src="/assets/syntaxhighlight/prism.js" defer></script>
+  <!-- preload font files -->
+  <link
+    rel="preload"
+    href="/assets/fonts/cabinet-grotesk/CabinetGrotesk-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
   <title>Elmouatez Benariba Billah Blog</title>
+  <!-- internal style -->
+  <style>
+    /* fonts */
+    @font-face {
+      font-family: 'CabinetGrotesk-Regular';
+      src: url(/assets/fonts/cabinet-grotesk/CabinetGrotesk-Regular.woff2);
+      font-display: optional;
+    }
+    body {
+      font-family: 'CabinetGrotesk-Regular';
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
     <header>
   <div class="container">
     <a href="/index.html" class="blog-name">Mouatez Benariba Blog</a>
     <nav>
       <ul class="nav-list">
-        <li class="nav-list__item"><a href="/index.html">Home</a></li>
         <li class="nav-list__item"><a href="/ar/index.html">Arabic</a></li>
         <li class="nav-list__item"><a href="/all-posts/index.html">Posts</a></li>
         <li class="nav-list__item"><a href="https://mouatezbenariba.me/">Portfolio</a></li>
@@ -209,7 +227,6 @@
         </ul>
       </div>
 </footer>
-  </div>
 
   <script>
   if (window.netlifyIdentity) {
