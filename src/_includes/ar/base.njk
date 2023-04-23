@@ -4,13 +4,11 @@
   {% include 'ar/head.njk' %}
 </head>
 <body dir="rtl">
-  <div class="container">
     {% include 'ar/header.njk' %}
   <main>
     {{ content | safe }}
   </main>
     {% include 'ar/footer.njk' %}
-  </div>
 
   <script>
   if (window.netlifyIdentity) {

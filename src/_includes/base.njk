@@ -4,13 +4,11 @@
   {% include 'head.njk' %}
 </head>
 <body>
-  <div class="container">
     {% include 'header.njk' %}
   <main>
     {{ content | safe }}
   </main>
     {% include 'footer.njk' %}
-  </div>
 
   <script>
   if (window.netlifyIdentity) {
