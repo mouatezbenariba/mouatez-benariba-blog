@@ -1,0 +1,15 @@
+{
+  "items": [
+    {
+      "title": "Blog Post Title",
+      "author": "Author Name",
+      "tags": ["post", "tag"],
+      "date": "2023-04-24T12:34:56Z",
+      "image": "/path/to/featured/image.jpg",
+      "imageAlt": "Image Alt Text",
+      "description": "Blog post description",
+      "pageDescription": "Page metadata description",
+      "body": "# Blog Post Title\n\nBlog post content"
+    }
+  ]
+}
