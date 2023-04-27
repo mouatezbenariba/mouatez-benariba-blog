@@ -6,7 +6,9 @@
 <body dir="rtl">
     {% include 'ar/header.njk' %}
   <main>
-    {{ content | safe }}
+    <div class="container">
+      {{ content | safe }}
+    </div>
   </main>
     {% include 'ar/footer.njk' %}
 

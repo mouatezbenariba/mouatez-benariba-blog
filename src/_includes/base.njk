@@ -6,7 +6,9 @@
 <body>
     {% include 'header.njk' %}
   <main>
-    {{ content | safe }}
+    <div class="container">
+      {{ content | safe }}
+    </div>
   </main>
     {% include 'footer.njk' %}
 
