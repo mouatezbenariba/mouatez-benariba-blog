@@ -2,5 +2,18 @@
 layout: 'base.njk'
 ---
 
-<h1>{{title}}</h1>
-{{ content | safe}}
+<div class="article-content">
+  <div class="article-content__header">
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+    <div class="art-info">
+      <div class="div-author">
+        <img src="/src/assets/images/personal-image/personal-image.webp" alt="Elmouatez Benariba Personal Image">
+      </div>
+      <span class="date">{{ date | postDate }}</span>
+    </div>
+  </div>
+  <div class="article-content__main">
+    {{ content | safe }}
+  </div>
+</div>

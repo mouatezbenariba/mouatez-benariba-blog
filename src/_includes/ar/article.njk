@@ -2,5 +2,12 @@
 layout: 'ar/base.njk'
 ---
 
-<h1>{{title}}</h1>
-{{ content | safe}}
+<div class="article-content">
+  <div class="article-content__header">
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+  </div>
+  <div class="article-content__main">
+    {{ content | safe }}
+  </div>
+</div>
