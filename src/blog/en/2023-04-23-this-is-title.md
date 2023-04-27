@@ -38,7 +38,10 @@ c﻿onsole.log("Hello!");
 
 z﻿ertyui aztyk adiqskdq z﻿ertyui aztyk adiqskdq z﻿ertyui aztyk adiqskdq z﻿ertyui aztyk adiqskdq z﻿ertyui aztyk adiqskdq z﻿ertyui aztyk adiqskdq z﻿ertyui aztyk adiqskdq z﻿ertyui aztyk adiqskdq z﻿ertyui aztyk adiqskdq z﻿ertyui aztyk adiqskdq z﻿ertyui aztyk adiqskdq z﻿ertyui aztyk adiqskdq z﻿ertyui aztyk adiqskdq z﻿ertyui aztyk adiqskdq
 
-![azerty 123 - qwerty 123](/assets/images/blog/mouatezbenariba-flex.webp 'azerty 123 - qwerty 123')
+<figure>
+  <img src="https://mouatezbenariba.me/assets/images/case-study/mouatezbenariba.me/mouatezbenariba.me.webp" alt="mouatezbenariba.me Home page">
+  <figcaption>This is my Image</figcaption>
+</figure>
 
 ## Y﻿es
 
