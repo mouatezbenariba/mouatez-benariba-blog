@@ -3,28 +3,28 @@ title: Elmouatez Benariba Billah Blog
 layout: 'base.njk'
 ---
 
-      <section class="welcome">
-        <div class="welcome__text">
-          <p>Welcome to my blog!</p>
-        </div>
-        <div class="welcome__media">
-          <picture>
-            <img
-              src="./assets/images/personal-image/personal-image.webp"
-              alt="mouatez benariba personal image"
-              width="150"
-              class="personal-image"
-            />
-          </picture>
-          <h1 class="media__name">Elmouatez Billah Benariba</h1>
-          <p class="media__info">Frontend Developer &amp; Biotechnology Engineer</p>
-      </section>
-    <section class="featured-articles">
-      {%- for post in collections.featured | reverse -%}
-        <li>
-          {% if post.data.language == "en" %}
-            {% include "article-snippets.njk" %}
-          {% endif %}
-        </li>
-      {%- endfor -%}
-    </section>
+<section class="welcome">
+  <div class="welcome__text">
+    <p>Welcome to my blog!</p>
+  </div>
+  <div class="welcome__media">
+    <picture>
+      <img
+        src="./assets/images/personal-image/personal-image.webp"
+        alt="mouatez benariba personal image"
+        width="150"
+        class="personal-image"
+      />
+    </picture>
+    <h1 class="media__name">Elmouatez Billah Benariba</h1>
+    <p class="media__info">Frontend Developer &amp; Biotechnology Engineer</p>
+</section>
+<section class="featured-articles">
+  {%- for post in collections.featured | reverse -%}
+    <li>
+      {% if post.data.language == "en" %}
+        {% include "article-snippets.njk" %}
+      {% endif %}
+    </li>
+  {%- endfor -%}
+</section>

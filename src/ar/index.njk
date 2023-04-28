@@ -3,29 +3,29 @@ title: مدونة المعتز بالله بن عريبة
 layout: 'ar/base.njk'
 ---
 
-      <section class="welcome">
-        <div class="welcome__text">
-          <p>مرحبا بك في مدونتي!</p>
-        </div>
-        <div class="welcome__media">
-          <picture>
-            <img
-              src="../assets/images/personal-image/personal-image.webp"
-              alt="mouatez benariba personal image"
-              width="150"
-              class="personal-image"
-            />
-          </picture>
-          <h1 class="media__name">المعتز بالله بن عريبة</h1>
-          <p class="media__info">مطور واجهات أمامية &amp; مهندس في البيوتكنولوجيا</p>
-        </div>
-      </section>
-    <section class="featured-articles">
-    {%- for post in collections.featured | reverse -%}
-      <li>
-        {% if post.data.language == "ar" %}
-          {% include "article-snippets.njk" %}
-        {% endif %}
-      </li>
-    {%- endfor -%}
-    </section>
+<section class="welcome">
+  <div class="welcome__text">
+    <p>مرحبا بك في مدونتي!</p>
+  </div>
+  <div class="welcome__media">
+    <picture>
+      <img
+        src="../assets/images/personal-image/personal-image.webp"
+        alt="mouatez benariba personal image"
+        width="150"
+        class="personal-image"
+      />
+    </picture>
+    <h1 class="media__name">المعتز بالله بن عريبة</h1>
+    <p class="media__info">مطور واجهات أمامية &amp; مهندس في البيوتكنولوجيا</p>
+  </div>
+</section>
+<section class="featured-articles">
+{%- for post in collections.featured | reverse -%}
+  <li>
+    {% if post.data.language == "ar" %}
+      {% include "article-snippets.njk" %}
+    {% endif %}
+  </li>
+{%- endfor -%}
+</section>
