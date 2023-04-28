@@ -6,6 +6,13 @@ layout: 'ar/base.njk'
   <div class="article-content__header">
     <h1>{{ title }}</h1>
     <p>{{ description }}</p>
+    <div class="art-info">
+      <div class="div-author">
+        <figure><img src="/assets/images/personal-image/personal-image.webp" alt="Elmouatez Benariba Personal Image"></figure>
+        <span>Elmouatez Billah Benariba</span>
+      </div>
+      <span class="date">{{ date | postDate }}</span>
+    </div>
   </div>
   <div class="article-content__main">
     {{ content | safe }}
