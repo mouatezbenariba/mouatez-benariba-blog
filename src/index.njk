@@ -23,7 +23,9 @@ layout: 'base.njk'
     <section class="featured-articles">
     {%- for post in collections.featured | reverse -%}
       <li>
-        {% include "article-snippets.njk" %}
+        {% if post.data.language == "en" %}
+          {% include "article-snippets.njk" %}
+        {% endif %}
       </li>
     {%- endfor -%}
     </section>
