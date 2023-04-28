@@ -19,13 +19,12 @@ layout: 'base.njk'
           <h1 class="media__name">Elmouatez Billah Benariba</h1>
           <p class="media__info">Frontend Developer &amp; Biotechnology Engineer</p>
       </section>
-    </div>
     <section class="featured-articles">
-    {%- for post in collections.featured | reverse -%}
-      <li>
-        {% if post.data.language == "en" %}
-          {% include "article-snippets.njk" %}
-        {% endif %}
-      </li>
-    {%- endfor -%}
+      {%- for post in collections.featured | reverse -%}
+        <li>
+          {% if post.data.language == "en" %}
+            {% include "article-snippets.njk" %}
+          {% endif %}
+        </li>
+      {%- endfor -%}
     </section>
