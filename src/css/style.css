@@ -155,6 +155,8 @@ section.featured-articles {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .article__thumbnail {
