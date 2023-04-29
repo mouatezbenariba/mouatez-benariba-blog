@@ -15,7 +15,7 @@ permalink: /tags/{{ tag | slug }}/
 <section class="blog-posts">
   <h1>Posts tagged with "{{ tag }}"</h1>
     {%- for post in collections[tag] -%}
-      {% if post.data.language == "en" %}
+      {% if post.data.lang == "en" %}
         {% include "article-snippets.njk" %}
       {% endif %}
     {%- endfor -%}
