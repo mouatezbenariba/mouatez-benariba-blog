@@ -335,9 +335,6 @@ figcaption {
   header nav {
     margin: 0;
   }
-}
-
-@media screen and (min-width: 769px) {
   .article {
     flex-direction: row;
   }
