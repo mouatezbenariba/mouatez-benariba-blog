@@ -256,6 +256,10 @@ p.footer__copyright {
   line-height: 1.5;
 }
 
+.article-content__main p {
+  text-align: justify;
+}
+
 .article-content p,
 figcaption {
   font-size: 1.2rem;
