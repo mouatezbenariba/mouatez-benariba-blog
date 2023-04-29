@@ -152,7 +152,7 @@ section.featured-articles {
 .article {
   display: flex;
   margin-bottom: 2rem;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -326,5 +326,11 @@ figcaption {
 
   header nav {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .article {
+    flex-direction: row;
   }
 }
