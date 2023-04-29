@@ -15,7 +15,7 @@ permalink: /ar/tags/{{ tag | slug }}/
 <section class="blog-posts">
   <h1>مقالات موسومة بـ: "{{ tag }}"</h1>
     {%- for post in collections[tag] -%}
-      {% if post.data.language == "ar" %}
+      {% if post.data.lang == "ar" %}
         {% include "article-snippets.njk" %}
       {% endif %}
     {%- endfor -%}
