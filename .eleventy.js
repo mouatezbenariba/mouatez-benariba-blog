@@ -11,8 +11,20 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/netlify.toml');
   eleventyConfig.addPassthroughCopy('./src/Robots.txt');
 
+  // add a new filter for English post dates
   eleventyConfig.addFilter('postDate', (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+  });
+
+  // add a new filter for Arabic post dates
+  eleventyConfig.addFilter('postDateAr', function (date) {
+    const dt = DateTime.fromJSDate(date, { zone: 'utc' }).setLocale('ar');
+    return dt.toLocaleString({
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      numberingSystem: 'latn',
+    });
   });
 
   eleventyConfig.addPlugin(syntaxHighlight);
