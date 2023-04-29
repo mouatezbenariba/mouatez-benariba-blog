@@ -309,12 +309,13 @@ figcaption {
 .div-author > figure {
   width: 60px;
   border-radius: 50%;
-  margin-right: 1rem;
+  margin-inline-end: 1rem;
 }
 
 .div-author figure img {
   width: 100%;
   border-radius: 50%;
+  border-style: none;
 }
 /* --------------- */
 /*  Media Queries  */
