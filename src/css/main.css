@@ -1,7 +1,22 @@
-*,
-*::after,
-*::after {
-  box-sizing: border-box;
+:root {
+  /* Khaki */
+  --khaki-100: #ffd454;
+  --khaki-200: #ffc107;
+
+  /* Gray */
+  --gray-100: #9e9b9b;
+  --gray-200: #000000;
+
+  /* Purple */
+  --purple-100: #f5ebff;
+  --purple-200: #dcc4ff;
+
+  /* Red */
+  --red-100: #e52424;
+  --red-200: #7a1f1f;
+
+  /* Bluish cyan */
+  --bluishCyan-100: #2cccfb;
 }
 
 body {
@@ -9,9 +24,18 @@ body {
   margin: 0;
 }
 
-/* reset */
+/* --------------- */
+/*      Reset      */
+/* --------------- */
 
-/* reset list */
+/*  Box sizing */
+*,
+*::after,
+*::after {
+  box-sizing: border-box;
+}
+
+/* reset lists */
 ul,
 ol {
   margin: 0;
@@ -28,7 +52,10 @@ a {
   color: unset;
 }
 
+/* ---------------- */
 /* utility  classes */
+/* ---------------- */
+
 .container {
   max-width: 60rem;
   margin: auto;
@@ -58,8 +85,10 @@ a {
   text-decoration: none;
 }
 
-/* main style */
-/* header */
+/* --------------- */
+/*  Header  Style  */
+/* --------------- */
+
 header {
   padding: 1rem 0;
   background-color: #dcc4ff;
@@ -100,7 +129,10 @@ header nav {
   font-weight: bold;
 }
 
-/* main */
+/* -------------- */
+/*   Main Style   */
+/* -------------- */
+
 main {
   min-height: calc(100vh - 10.1rem);
   padding: 2rem 0;
@@ -130,7 +162,10 @@ main .container {
   font-size: 1.5rem;
 }
 
+/* ---------------- */
 /* Discover Per tag */
+/* ---------------- */
+
 .tags {
   text-align: center;
 }
@@ -143,7 +178,9 @@ main .container {
   border-radius: 0.3rem;
 }
 
+/* ----------------- */
 /* featured articles */
+/* ----------------- */
 
 section.featured-articles {
   margin-top: 3rem;
@@ -194,7 +231,10 @@ section.featured-articles {
   justify-content: space-between;
 }
 
-/* footer */
+/* -------------- */
+/*  Footer Style  */
+/* -------------- */
+
 footer {
   padding: 1rem 0;
   background-color: #dcc4ff;
@@ -250,6 +290,7 @@ p.footer__copyright {
 /* --------------------- */
 /* article content style */
 /* --------------------- */
+
 .article-content {
   max-width: 40rem;
   margin: auto;
@@ -298,7 +339,7 @@ figcaption {
 .article-content figure img {
   max-width: 100%;
   border-radius: 0.6rem;
-  border: 0.2rem solid #ffc107b0;
+  border: 0.2rem solid #ffd454;
   box-shadow: 0 0 10px 0px #000000;
 }
 
@@ -318,11 +359,10 @@ figcaption {
   border-radius: 50%;
   border-style: none;
 }
+
 /* --------------- */
 /*  Media Queries  */
 /* --------------- */
-@media screen and (min-width: 320px) {
-}
 
 @media screen and (min-width: 480px) {
   header .container {
