@@ -6,7 +6,7 @@ const fs = require('fs');
 const NOT_FOUND_PATH = 'public/404.html';
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy('./src/css/style.css');
+  eleventyConfig.addPassthroughCopy('./src/css');
   eleventyConfig.addPassthroughCopy('./src/assets');
   eleventyConfig.addPassthroughCopy('./src/admin/config.yml');
   eleventyConfig.addPassthroughCopy('./src/manifest.json');
