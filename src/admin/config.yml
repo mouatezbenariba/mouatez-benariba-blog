@@ -24,6 +24,7 @@ collections:
           name: 'pageDescription',
           widget: 'string',
         }
+      - { label: 'Seo Image', name: 'seoImage', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'ar-blog'
     label: 'Ar-Blog'
@@ -44,4 +45,5 @@ collections:
           name: 'pageDescription',
           widget: 'string',
         }
+      - { label: 'Seo Image', name: 'seoImage', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
