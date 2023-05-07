@@ -5,6 +5,10 @@
     src="/src/assets/images/seo-images/mouatezbenaribablog-en.png"
     width="900"
   />
+<img
+    src="/src/assets/images/seo-images/mouatezbenaribablog-ar.png"
+    width="900"
+  />
 </div>
 
 <p align="center">
