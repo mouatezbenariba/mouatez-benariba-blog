@@ -52,7 +52,7 @@ My inspiration for this website came from the portfolios of some amazing fronten
 - [Lynn Fisher Blog](https://lynnandtonicblog.com/)
 - [Addy Osmani Blog](https://addyosmani.com/blog/)
 - [Davis Dias Blog](https://thedaviddias.dev/articles)
-- [Smashing Magazine](href="https://www.smashingmagazine.com/)
+- [Smashing Magazine](https://www.smashingmagazine.com/)
 
 ## Author
 - website - [Elmouatez Billah Benariba](https://mouatezbenariba.me/)
