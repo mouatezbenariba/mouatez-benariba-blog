@@ -245,6 +245,7 @@ footer {
   justify-content: space-between;
   flex-direction: column-reverse;
   align-items: center;
+  padding: 0 1rem;
 }
 
 p.footer__copyright {
