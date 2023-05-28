@@ -262,16 +262,6 @@
 </footer>
 
   <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-
 document.addEventListener("DOMContentLoaded", function() {
   // Your code that uses Prism goes here
   Prism.highlightAll();
@@ -289,6 +279,16 @@ for (const item of b) {
   item.classList.add('post-img');
   console.log(item);
 }
+
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
 </script>
 </body>
 </html>
