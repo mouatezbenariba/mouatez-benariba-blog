@@ -20,7 +20,7 @@ seoImage: /assets/images/blog/showhide-paragraph-2-.png
 ---
 # Overview on Elzero Frontend Challenges
 
-Elzero Frontend Challenges is a collection of coding challenges designed for learners who want to improve their HTML and CSS skills. Created by [Osama Mohamed (Elzero)](https://twitter.com/Osama_Elzero), these challenges are available in the frontend track of [Elzero Web School](https://elzero.org/tracks/front-end/). [1](https://mouatezbenariba.me/src/html/case-study/elzero-frontend-challenges.html)
+Elzero Frontend Challenges is a collection of coding challenges designed for learners who want to improve their HTML and CSS skills. Created by [Osama Mohamed (Elzero)](https://twitter.com/Osama_Elzero), these challenges are available in the frontend track of [Elzero Web School](https://elzero.org/tracks/front-end/). [[1]](https://mouatezbenariba.me/src/html/case-study/elzero-frontend-challenges.html)
 
 # [](https://hashnode.mouatezbenariba.me/build-a-button-that-shows-and-hides-a-paragraph-elzero-frontend-challenges#heading-introduction "Permalink")Introduction
 
