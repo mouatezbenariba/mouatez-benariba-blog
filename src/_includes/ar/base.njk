@@ -13,15 +13,6 @@
     {% include 'ar/footer.njk' %}
 
   <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
   Prism.highlightAll();
 
   let a = document.querySelectorAll('p:has(img)');
@@ -36,6 +27,16 @@
     item.classList.add('post-img');
     console.log(item);
   }
+
+  if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
+}
 </script>
 </body>
 </html>
