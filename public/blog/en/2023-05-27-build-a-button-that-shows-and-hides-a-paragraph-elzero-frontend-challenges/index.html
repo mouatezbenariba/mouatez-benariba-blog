@@ -171,21 +171,19 @@
     </div>
   </div>
   <div class="article-content__main">
-    <h1>Overview on Elzero Frontend Challenges</h1>
+    <h2>Overview on Elzero Frontend Challenges</h2>
 <p>Elzero Frontend Challenges is a collection of coding challenges designed for learners who want to improve their HTML and CSS skills. Created by <a href="https://twitter.com/Osama_Elzero">Osama Mohamed (Elzero)</a>, these challenges are available in the frontend track of <a href="https://elzero.org/tracks/front-end/">Elzero Web School</a>. <a href="https://mouatezbenariba.me/src/html/case-study/elzero-frontend-challenges.html">[1]</a></p>
-<h1><a href="https://hashnode.mouatezbenariba.me/build-a-button-that-shows-and-hides-a-paragraph-elzero-frontend-challenges#heading-introduction" title="Permalink"></a>Introduction</h1>
+<h2>Introduction</h2>
 <p>As part of my journey to enhance my frontend skills, I took on the <a href="https://elzero.org/category/challenges/front-end-challenges/">Elzero Frontend Challenges</a>. Initially, progress was slow, but I was determined to overcome the obstacles and improve my abilities. Upon my return to the challenges, I encountered some new additions that piqued my interest. In this blog post, I will share my experience and insights gained from tackling the &quot;<strong><a href="https://elzero.org/frontend-show-hide-paragraph/">show/hide paragraph challenge</a></strong>&quot;.</p>
-<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1685195852930/2fab1a79-fcaa-421b-826e-ce0b806a0765.gif?auto=format,compress&amp;gif-q=60&amp;format=webm" alt=""></p>
-<h2><a href="https://hashnode.mouatezbenariba.me/build-a-button-that-shows-and-hides-a-paragraph-elzero-frontend-challenges#heading-understanding-the-challenge" title="Permalink"></a>Understanding the Challenge</h2>
+<h2>Understanding the Challenge</h2>
 <p>The objective of this challenge was to create a button that toggles the visibility of a paragraph when clicked. While seemingly simple, it taught me an important lesson: &quot;Understanding the question is half the answer.&quot;</p>
-<h2><a href="https://hashnode.mouatezbenariba.me/build-a-button-that-shows-and-hides-a-paragraph-elzero-frontend-challenges#heading-building-the-foundation" title="Permalink"></a>Building the Foundation</h2>
+<h2>Building the Foundation</h2>
 <p>To begin, I created a basic HTML structure for the challenge. Following best practices, I adhered to the BEM (Block, Element, Modifier) naming convention, ensuring a clean and organized codebase. With the foundation in place, I proceeded to the next stage of styling the elements using CSS.</p>
 <pre class="language-html" tabindex="0" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container action<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>action__btn<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Click<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>action__content<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>This is My Paragraph<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
-<p><img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1685196017505/699c4549-f449-4cde-be91-82ea0798c00b.png?auto=compress,format&amp;format=webp" alt=""></p>
-<h2><a href="https://hashnode.mouatezbenariba.me/build-a-button-that-shows-and-hides-a-paragraph-elzero-frontend-challenges#heading-perfecting-the-styling" title="Permalink"></a>Perfecting the Styling</h2>
+<h2>Perfecting the Styling</h2>
 <p>To achieve the desired design, I leveraged CSS to add the necessary visual enhancements.</p>
 <p>For the button, I removed the default border styling and added a hover effect that changed the mouse cursor to a hand. These subtle details contribute to a better user experience.</p>
 <pre class="language-css" tabindex="0" data-language="css"><code class="language-css"><span class="token selector"><span class="token class">.action__btn</span></span> <span class="token punctuation">{</span>
@@ -202,14 +200,14 @@
 <span class="token punctuation">}</span></code></pre>
 <p>Moving on to the paragraph, I applied appropriate styles to ensure they aligned with the provided design.</p>
 <p>I used the &quot;<a href="https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi">Perfect Pixel</a>&quot; extension to ensure precise pixel-sized programming since I only had an image of the design and not a Figma or Adobe XD file.</p>
-<h2><a href="https://hashnode.mouatezbenariba.me/build-a-button-that-shows-and-hides-a-paragraph-elzero-frontend-challenges#heading-javascript-implementation" title="Permalink"></a>JavaScript Implementation</h2>
+<h2>JavaScript Implementation</h2>
 <p>As I delved into the JavaScript implementation, I initially planned to create an event listener that would toggle classes with each click, allowing for seamless show/hide functionality. However, upon re-reading the challenge requirements, I realized the need to incorporate the <strong>window.getComputedStyle()</strong> method.</p>
 <blockquote>
 <p><code>Understanding the question is half the answer.</code></p>
 </blockquote>
-<h2><a href="https://hashnode.mouatezbenariba.me/build-a-button-that-shows-and-hides-a-paragraph-elzero-frontend-challenges#heading-taking-a-closer-look-at-getcomputedstyle" title="Permalink"></a>Taking a Closer Look at <code>getComputedStyle()</code></h2>
+<h2>Taking a Closer Look at <code>getComputedStyle()</code></h2>
 <p>The <strong>Window.getComputedStyle()</strong> method returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle">[2]</a>. By utilizing this function, we can retrieve the <strong>visibility property value</strong> and manipulate it accordingly.</p>
-<h2><a href="https://hashnode.mouatezbenariba.me/build-a-button-that-shows-and-hides-a-paragraph-elzero-frontend-challenges#heading-solution" title="Permalink"></a>Solution</h2>
+<h2>Solution</h2>
 <p>To bring the challenge to life, I wrote the following JavaScript code:</p>
 <pre class="language-javascript" tabindex="0" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> actionBtn <span class="token operator">=</span> <span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">querySelector</span><span class="token punctuation">(</span><span class="token string">'.action__btn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">const</span> actionCtn <span class="token operator">=</span> <span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">querySelector</span><span class="token punctuation">(</span><span class="token string">'.action__content'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -223,19 +221,19 @@
 
 actionBtn<span class="token punctuation">.</span><span class="token method function property-access">addEventListener</span><span class="token punctuation">(</span><span class="token string">'click'</span><span class="token punctuation">,</span> setOpacity<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <p>The code above checks the visibility styling of the paragraph element when the button is clicked. By toggling the visibility property between 'visible' and 'hidden', the paragraph is displayed or hidden accordingly.</p>
-<h2><a href="https://hashnode.mouatezbenariba.me/build-a-button-that-shows-and-hides-a-paragraph-elzero-frontend-challenges#heading-links" title="Permalink"></a>Links</h2>
+<h2>Links</h2>
 <ul>
 <li>Github: <a href="https://github.com/mouatezbenariba/Elzero-Frontend-Challenges/tree/main/show-hide-paragraph">Show/Hide paragraph Challenge</a></li>
 <li>Demo: <a href="https://mouatezbenariba.github.io/Elzero-Frontend-Challenges/show-hide-paragraph/">Show/Hide paragraph Challenge</a></li>
 <li>Codepen: <a href="https://codepen.io/mouatezbenariba/pen/poxBvga">Show/Hide paragraph Challenge</a></li>
 </ul>
-<h2><a href="https://hashnode.mouatezbenariba.me/build-a-button-that-shows-and-hides-a-paragraph-elzero-frontend-challenges#heading-key-takeaways" title="Permalink"></a>Key Takeaways</h2>
+<h2>Key Takeaways</h2>
 <ol>
 <li>Understanding the challenge requirements is crucial for success. Take the time to comprehend the task before diving into implementation.</li>
 <li>Adopt best practices such as using structured HTML, following naming conventions, and applying appropriate CSS styles.</li>
 <li>Use <strong>getComputedStyle</strong> to access and manipulate computed styles of elements dynamically.</li>
 </ol>
-<h2><a href="https://hashnode.mouatezbenariba.me/build-a-button-that-shows-and-hides-a-paragraph-elzero-frontend-challenges#heading-give-it-a-try" title="Permalink"></a>Give it a Try!</h2>
+<h2>Give it a Try!</h2>
 <p>I invite you to rate my work and give it a try yourself. Engaging in frontend challenges like this one can be an excellent opportunity to enhance your skills, expand your knowledge, and improve your problem-solving abilities.</p>
 
   </div>
@@ -302,17 +300,20 @@ document.addEventListener("DOMContentLoaded", function() {
   Prism.highlightAll();
 });
 
-let a = document.querySelectorAll('p:has(img)');
-let b = document.querySelectorAll('p > img');
+let imagesContainers = document.querySelectorAll('p:has(img)');
+let images = document.querySelectorAll('p > img');
+let postLinks = document.querySelectorAll('main a');
 
-for (const item of a) {
+for (const item of imagesContainers) {
   item.classList.add('img-container');
-  console.log(item);
 }
 
-for (const item of b) {
+for (const item of images) {
   item.classList.add('post-img');
-  console.log(item);
+}
+
+for (const item of postLinks) {
+  item.classList.add('underline', 'highlight');
 }
 
   if (window.netlifyIdentity) {

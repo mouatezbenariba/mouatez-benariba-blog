@@ -368,6 +368,16 @@ p.img-container {
 .post-img {
   max-width: 100%;
 }
+
+.underline {
+  text-decoration: underline dashed var(--red-200) 0.1rem;
+  text-underline-offset: 0.3rem;
+}
+
+.highlight {
+  color: var(--red-200);
+}
+
 /* --------------- */
 /*  Media Queries  */
 /* --------------- */
