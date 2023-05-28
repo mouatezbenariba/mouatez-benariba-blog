@@ -20,7 +20,7 @@ seoImage: /assets/images/blog/showhide-paragraph-2-.png
 ---
 # Overview on Elzero Frontend Challenges
 
-Elzero Frontend Challenges is a collection of coding challenges designed for learners who want to improve their HTML and CSS skills. Created by [Osama Mohamed (Elzero)](https://twitter.com/Osama_Elzero), these challenges are available in the frontend track of [Elzero Web School](https://elzero.org/tracks/front-end/). [\[1]](https://mouatezbenariba.me/src/html/case-study/elzero-frontend-challenges.html)
+Elzero Frontend Challenges is a collection of coding challenges designed for learners who want to improve their HTML and CSS skills. Created by [Osama Mohamed (Elzero)](https://twitter.com/Osama_Elzero), these challenges are available in the frontend track of [Elzero Web School](https://elzero.org/tracks/front-end/). [1](https://mouatezbenariba.me/src/html/case-study/elzero-frontend-challenges.html)
 
 # [](https://hashnode.mouatezbenariba.me/build-a-button-that-shows-and-hides-a-paragraph-elzero-frontend-challenges#heading-introduction "Permalink")Introduction
 
@@ -78,7 +78,7 @@ As I delved into the JavaScript implementation, I initially planned to create an
 
 ## [](https://hashnode.mouatezbenariba.me/build-a-button-that-shows-and-hides-a-paragraph-elzero-frontend-challenges#heading-taking-a-closer-look-at-getcomputedstyle "Permalink")Taking a Closer Look at `getComputedStyle()`
 
-The **Window.getComputedStyle()** method returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain [\[2]](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle). By utilizing this function, we can retrieve the **visibility property value** and manipulate it accordingly.
+The **Window.getComputedStyle()** method returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain [2](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle). By utilizing this function, we can retrieve the **visibility property value** and manipulate it accordingly.
 
 ## [](https://hashnode.mouatezbenariba.me/build-a-button-that-shows-and-hides-a-paragraph-elzero-frontend-challenges#heading-solution "Permalink")Solution
 
