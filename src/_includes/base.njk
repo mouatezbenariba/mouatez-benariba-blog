@@ -27,6 +27,19 @@ document.addEventListener("DOMContentLoaded", function() {
   // Your code that uses Prism goes here
   Prism.highlightAll();
 });
+
+let a = document.querySelectorAll('p:has(img)');
+let b = document.querySelectorAll('p > img');
+
+for (const item of a) {
+  item.classList.add('img-container');
+  console.log(item);
+}
+
+for (const item of b) {
+  item.classList.add('post-img');
+  console.log(item);
+}
 </script>
 </body>
 </html>

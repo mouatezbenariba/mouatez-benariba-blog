@@ -161,6 +161,16 @@
       
 <ul>
   
+    <li><a href="/ar/tags/html" class="post-tag"> HTML </a></li>
+  
+    <li><a href="/ar/tags/css" class="post-tag"> CSS </a></li>
+  
+    <li><a href="/ar/tags/frontend" class="post-tag"> Frontend </a></li>
+  
+    <li><a href="/ar/tags/elzero-frontend-challenges" class="post-tag"> Elzero-Frontend-Challenges </a></li>
+  
+    <li><a href="/ar/tags/featured" class="post-tag"> featured </a></li>
+  
 </ul>
 
     </div>
@@ -230,6 +240,19 @@
     });
   }
   Prism.highlightAll();
+
+  let a = document.querySelectorAll('p:has(img)');
+  let b = document.querySelectorAll('p > img');
+
+  for (const item of a) {
+    item.classList.add('img-container');
+    console.log(item);
+  }
+
+  for (const item of b) {
+    item.classList.add('post-img');
+    console.log(item);
+  }
 </script>
 </body>
 </html>

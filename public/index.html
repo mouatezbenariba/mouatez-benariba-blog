@@ -174,7 +174,37 @@
     <h1 class="media__name">Elmouatez Billah Benariba</h1>
     <p class="media__info">Frontend Developer &amp; Biotechnology Engineer</p>
 </section>
-<section class="featured-articles"></section>
+<section class="featured-articles"><li>
+      
+        <article class="article">
+  <div class="article__thumbnail">
+    <img src="/assets/images/blog/showhide-paragraph-2-.png" alt="Explore my blog post where I provide a step-by-step breakdown of how I tackled Show/Hide Paragraph Elzero Frontend Challenge." width="200" />
+  </div>
+  <div class="article__info">
+    <h2 class="article__title">
+      <a href="/blog/en/2023-05-27-build-a-button-that-shows-and-hides-a-paragraph-elzero-frontend-challenges/">Elzero Frontend Challenges: Build a button that shows and hides a paragraph</a>
+    </h2>
+    <p class="article__description">
+      Explore my blog post where I provide a step-by-step breakdown of how I tackled Show/Hide Paragraph Elzero Frontend Challenge.
+    </p>
+    <span class="article__tags">
+      tagged:
+      
+        <span class="tag"><a href="/tags/html">HTML</a></span>
+      
+        <span class="tag"><a href="/tags/css">CSS</a></span>
+      
+        <span class="tag"><a href="/tags/frontend">Frontend</a></span>
+      
+        <span class="tag"><a href="/tags/elzero-frontend-challenges">Elzero-Frontend-Challenges</a></span>
+      
+        <span class="tag"><a href="/tags/featured">featured</a></span>
+      
+    </span>
+  </div>
+</article>
+      
+    </li></section>
     </div>
   </main>
     <footer class="footer">
@@ -246,6 +276,19 @@ document.addEventListener("DOMContentLoaded", function() {
   // Your code that uses Prism goes here
   Prism.highlightAll();
 });
+
+let a = document.querySelectorAll('p:has(img)');
+let b = document.querySelectorAll('p > img');
+
+for (const item of a) {
+  item.classList.add('img-container');
+  console.log(item);
+}
+
+for (const item of b) {
+  item.classList.add('post-img');
+  console.log(item);
+}
 </script>
 </body>
 </html>
