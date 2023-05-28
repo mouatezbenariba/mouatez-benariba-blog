@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  repo: mouatezbenariba/mouatez-benariba-blog
   branch: main
   access_token: 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
 media_folder: 'public/assets/images/blog'
