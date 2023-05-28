@@ -1,5 +1,5 @@
 {
-  "name": "personal-blog",
+  "name": "mouatezbenaribablog",
   "version": "1.0.0",
   "description": "The personal blog of Elmouatez Billah Benariba",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mouatezbenariba/personal-blog-own.git"
+    "url": "git+https://github.com/mouatezbenariba/mouatez-benariba-blog.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mouatezbenariba/personal-blog-own/issues"
+    "url": "https://github.com/mouatezbenariba/mouatez-benariba-blog/issues"
   },
-  "homepage": "https://github.com/mouatezbenariba/personal-blog-own#readme",
+  "homepage": "https://github.com/mouatezbenariba/mouatez-benariba-blog#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0"
