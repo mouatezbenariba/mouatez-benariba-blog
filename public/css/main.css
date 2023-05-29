@@ -40,6 +40,7 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+  font-size: 1.2rem;
 }
 
 li {
@@ -300,6 +301,12 @@ p.footer__copyright {
 
 .article-content__main p {
   text-align: left;
+}
+
+.article-content__main li {
+  list-style: unset;
+  margin-left: 2rem;
+  padding-left: 0.3rem;
 }
 
 .article-content p,
