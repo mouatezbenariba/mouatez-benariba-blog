@@ -299,7 +299,7 @@ p.footer__copyright {
 }
 
 .article-content__main p {
-  text-align: justify;
+  text-align: left;
 }
 
 .article-content p,
@@ -378,6 +378,26 @@ p.img-container {
   color: var(--red-200);
 }
 
+blockquote {
+  position: relative;
+  display: flex;
+  background-color: #673ab72b;
+  margin: 0;
+  font-style: italic;
+}
+
+blockquote::before {
+  content: '';
+  position: absolute;
+  width: 0.5rem;
+  height: 100%;
+  background-color: #009688;
+}
+
+blockquote p {
+  padding-inline-start: 2rem;
+  padding-inline-end: 2rem;
+}
 /* --------------- */
 /*  Media Queries  */
 /* --------------- */
