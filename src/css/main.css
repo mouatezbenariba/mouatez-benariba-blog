@@ -86,6 +86,15 @@ a {
   text-decoration: none;
 }
 
+.underline {
+  text-decoration: underline dashed var(--red-200) 0.1rem;
+  text-underline-offset: 0.3rem;
+}
+
+.highlight {
+  color: var(--red-200);
+}
+
 /* --------------- */
 /*  Header  Style  */
 /* --------------- */
@@ -301,6 +310,7 @@ p.footer__copyright {
 
 .article-content__main p {
   text-align: left;
+  word-break: break-word;
 }
 
 .article-content__main li {
@@ -376,15 +386,6 @@ p.img-container {
   max-width: 100%;
 }
 
-.underline {
-  text-decoration: underline dashed var(--red-200) 0.1rem;
-  text-underline-offset: 0.3rem;
-}
-
-.highlight {
-  color: var(--red-200);
-}
-
 blockquote {
   position: relative;
   display: flex;
@@ -404,6 +405,10 @@ blockquote::before {
 blockquote p {
   padding-inline-start: 2rem;
   padding-inline-end: 2rem;
+}
+
+h2 {
+  word-break: break-word;
 }
 /* --------------- */
 /*  Media Queries  */
