@@ -191,7 +191,7 @@
   <span class="token comment">/* reset all inherited styles to their initial value */</span>
   <span class="token property">all</span><span class="token punctuation">:</span> unset<span class="token punctuation">;</span>
   <span class="token comment">/* add custom button style */</span>
-  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0.2</span><span class="token unit">rem</span> <span class="token number">1.2</span><span class="token unit">rem</span><span class="token punctuation">;</span>  
+  <span class="token property">padding</span><span class="token punctuation">:</span> <span class="token number">0.2</span><span class="token unit">rem</span> <span class="token number">1.2</span><span class="token unit">rem</span><span class="token punctuation">;</span>
   <span class="token property">background-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span><span class="token variable">--cyan-100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token property">border-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span><span class="token variable">--cyan-100</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token property">border-radius</span><span class="token punctuation">:</span> <span class="token number">0.4</span><span class="token unit">rem</span><span class="token punctuation">;</span>
@@ -202,12 +202,12 @@
 <p>Moving on to the paragraph, I applied appropriate styles to ensure they aligned with the provided design.</p>
 <p>I used the &quot;<a href="https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi">Perfect Pixel</a>&quot; extension to ensure precise pixel-sized programming since I only had an image of the design and not a Figma or Adobe XD file.</p>
 <h2>JavaScript Implementation</h2>
-<p>As I delved into the JavaScript implementation, I initially planned to create an event listener that would toggle classes with each click, allowing for seamless show/hide functionality. However, upon re-reading the challenge requirements, I realized the need to incorporate the <strong>window.getComputedStyle()</strong> method.</p>
+<p>As I delved into the JavaScript implementation, I initially planned to create an event listener that would toggle classes with each click, allowing for seamless show/hide functionality. However, upon re-reading the challenge requirements, I realized the need to incorporate the <strong>window.getComputedStyle()</strong>  method.</p>
 <blockquote>
 <p><code>Understanding the question is half the answer.</code></p>
 </blockquote>
 <h2>Taking a Closer Look at <code>getComputedStyle()</code></h2>
-<p>The <strong>Window.getComputedStyle()</strong> method returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle">[2]</a>. By utilizing this function, we can retrieve the <strong>visibility property value</strong> and manipulate it accordingly.</p>
+<p>The <strong>Window.getComputedStyle()</strong>  method returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle">[2]</a>. By utilizing this function, we can retrieve the <strong>visibility property value</strong> and manipulate it accordingly.</p>
 <h2>Solution</h2>
 <p>To bring the challenge to life, I wrote the following JavaScript code:</p>
 <pre class="language-javascript" tabindex="0" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> actionBtn <span class="token operator">=</span> <span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">querySelector</span><span class="token punctuation">(</span><span class="token string">'.action__btn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>

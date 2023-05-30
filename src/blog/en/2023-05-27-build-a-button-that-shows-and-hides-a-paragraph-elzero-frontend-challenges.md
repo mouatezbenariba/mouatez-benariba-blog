@@ -1,6 +1,6 @@
 ---
 lang: en
-title: "Elzero Frontend Challenges: Build a button that shows and hides a paragraph"
+title: 'Elzero Frontend Challenges: Build a button that shows and hides a paragraph'
 author: Elmouatez Billah Benariba
 tags:
   - post
@@ -18,6 +18,7 @@ pageDescription: Explore my blog post where I provide a step-by-step breakdown
   of how I tackled Show/Hide Paragraph Elzero Frontend Challenge.
 seoImage: /assets/images/blog/showhide-paragraph-2-.png
 ---
+
 ## Overview on Elzero Frontend Challenges
 
 Elzero Frontend Challenges is a collection of coding challenges designed for learners who want to improve their HTML and CSS skills. Created by [Osama Mohamed (Elzero)](https://twitter.com/Osama_Elzero), these challenges are available in the frontend track of [Elzero Web School](https://elzero.org/tracks/front-end/). [[1]](https://mouatezbenariba.me/src/html/case-study/elzero-frontend-challenges.html)
@@ -54,7 +55,7 @@ For the button, I removed the default border styling and added a hover effect th
   /* reset all inherited styles to their initial value */
   all: unset;
   /* add custom button style */
-  padding: 0.2rem 1.2rem;  
+  padding: 0.2rem 1.2rem;
   background-color: var(--cyan-100);
   border-color: var(--cyan-100);
   border-radius: 0.4rem;
@@ -70,13 +71,13 @@ I used the "[Perfect Pixel](https://chrome.google.com/webstore/detail/perfectpix
 
 ## JavaScript Implementation
 
-As I delved into the JavaScript implementation, I initially planned to create an event listener that would toggle classes with each click, allowing for seamless show/hide functionality. However, upon re-reading the challenge requirements, I realized the need to incorporate the **window.getComputedStyle()** method.
+As I delved into the JavaScript implementation, I initially planned to create an event listener that would toggle classes with each click, allowing for seamless show/hide functionality. However, upon re-reading the challenge requirements, I realized the need to incorporate the **window.getComputedStyle()**  method.
 
 > `Understanding the question is half the answer.`
 
 ## Taking a Closer Look at `getComputedStyle()`
 
-The **Window.getComputedStyle()** method returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain [[2]](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle). By utilizing this function, we can retrieve the **visibility property value** and manipulate it accordingly.
+The **Window.getComputedStyle()**  method returns an object containing the values of all CSS properties of an element, after applying active stylesheets and resolving any basic computation those values may contain [[2]](https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle). By utilizing this function, we can retrieve the **visibility property value** and manipulate it accordingly.
 
 ## Solution
 
@@ -100,9 +101,9 @@ The code above checks the visibility styling of the paragraph element when the b
 
 ## Links
 
-* Github: [Show/Hide paragraph Challenge](https://github.com/mouatezbenariba/Elzero-Frontend-Challenges/tree/main/show-hide-paragraph)
-* Demo: [Show/Hide paragraph Challenge](https://mouatezbenariba.github.io/Elzero-Frontend-Challenges/show-hide-paragraph/)
-* Codepen: [Show/Hide paragraph Challenge](https://codepen.io/mouatezbenariba/pen/poxBvga)
+- Github: [Show/Hide paragraph Challenge](https://github.com/mouatezbenariba/Elzero-Frontend-Challenges/tree/main/show-hide-paragraph)
+- Demo: [Show/Hide paragraph Challenge](https://mouatezbenariba.github.io/Elzero-Frontend-Challenges/show-hide-paragraph/)
+- Codepen: [Show/Hide paragraph Challenge](https://codepen.io/mouatezbenariba/pen/poxBvga)
 
 ## Key Takeaways
 
