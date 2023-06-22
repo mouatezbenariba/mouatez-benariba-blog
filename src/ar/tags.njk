@@ -5,6 +5,6 @@ ogType: website
 
 <ul>
   {% for tag in collections.tagList %}
-    <li><a href="/ar/tags/{{ tag | slug }}" class="post-tag"> {{ tag }} </a></li>
+    <li><a href="/ar/tags/{{ tag | slugify }}" class="post-tag"> {{ tag }} </a></li>
   {% endfor %}
 </ul>

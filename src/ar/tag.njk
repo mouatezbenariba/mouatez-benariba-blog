@@ -10,7 +10,7 @@ pagination:
     - tagList
   addAllPagesToCollections: true
 layout: ar/base.njk
-permalink: /ar/tags/{{ tag | slug }}/
+permalink: /ar/tags/{{ tag | slugify }}/
 ---
 <section class="blog-posts">
   <h1>مقالات موسومة بـ: "{{ tag }}"</h1>
