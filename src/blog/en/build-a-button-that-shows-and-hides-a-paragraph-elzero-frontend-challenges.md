@@ -1,6 +1,7 @@
 ---
 lang: en
 title: 'Elzero Frontend Challenges: Build a button that shows and hides a paragraph'
+permalink: '/blog/en/{{ date | dateToUrl }}/ {{ title | slugify }}/'
 author: Elmouatez Billah Benariba
 tags:
   - post
