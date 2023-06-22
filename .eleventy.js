@@ -4,6 +4,7 @@ const Prism = require('prismjs');
 require('prismjs/components/')(); // load all Prism.js components
 const fs = require('fs');
 const NOT_FOUND_PATH = 'public/404.html';
+var slugify = require('slugify');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/css');
@@ -26,6 +27,14 @@ module.exports = function (eleventyConfig) {
       month: 'long',
       day: 'numeric',
       numberingSystem: 'latn',
+    });
+  });
+
+  // add slugify filter
+  eleventyConfig.addFilter('slugify', (input) => {
+    return slugify(input, {
+      lower: true, // Convert the slug to lowercase
+      remove: /[*+~.()'"!:@]/g, // Remove special characters from the slug
     });
   });
 
