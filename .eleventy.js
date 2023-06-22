@@ -38,6 +38,14 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  // Add filter to convert date to URL format (year/month)
+  eleventyConfig.addFilter('dateToUrl', (dateObj) => {
+    const date = DateTime.fromJSDate(dateObj);
+    const year = date.year.toString().padStart(4, '0');
+    const month = date.month.toString().padStart(2, '0');
+    return `${year}/${month}`;
+  });
+
   eleventyConfig.addPlugin(syntaxHighlight, {
     // Line separator for line breaks
     lineSeparator: '\n',
