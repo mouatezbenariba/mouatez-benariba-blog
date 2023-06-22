@@ -20,7 +20,7 @@ seoImage: /assets/images/blog/showhide-paragraph.png
 ---
 ## Overview on Elzero Frontend Challenges
 
-Elzero Frontend Challenges is a collection of coding challenges designed for learners who want to improve their HTML and CSS skills. Created by [Osama Mohamed (Elzero)](https://twitter.com/Osama_Elzero), these challenges are available in the frontend track of [Elzero Web School](https://elzero.org/tracks/front-end/). [\[1]](https://mouatezbenariba.me/src/html/case-study/elzero-frontend-challenges.html)
+Elzero Frontend Challenges is a collection of coding challenges designed for learners who want to improve their HTML and CSS skills. Created by [Osama Mohamed (Elzero)](https://twitter.com/Osama_Elzero), these challenges are available in the frontend track of [Elzero Web School](https://elzero.org/tracks/front-end/).
 
 ## Understanding the Challenge
 
@@ -69,7 +69,7 @@ First, I searched for the desired fonts on Google Fonts and included them using 
 
 Second, I set the default font family for the test text as "Open Sans." This ensures that the text always has a font style applied.
 
-T﻿hird, I added an event listener to the select.Whenever a change occurs in the select element, the font family of the Test text is updated based on the selected value (Font Name)in the select element. The value attribute of each option in the select element corresponds to the font family declaration provided by Google Fonts. 
+T﻿hird, I added an event listener to the select. Whenever a change occurs in the select element, the font family of the Test text is updated based on the selected value (Font Name)in the select element. The value attribute of each option in the select element corresponds to the font family declaration provided by Google Fonts. 
 
 ```javascript
 const font = document.getElementById('text-fonts');
@@ -83,8 +83,8 @@ font.addEventListener('change', (e) => {
 ## Links
 
 * Github: ﻿[Font Changer](https://github.com/mouatezbenariba/Elzero-Frontend-Challenges/tree/main/font-changer)
-*   Demo: [﻿Font Changer](https://mouatezbenariba.github.io/Elzero-Frontend-Challenges/font-changer/)
-*   Codepen: [Font Changer](https://codepen.io/mouatezbenariba/pen/JjeRVmB)﻿﻿
+* Demo: [﻿Font Changer](https://mouatezbenariba.github.io/Elzero-Frontend-Challenges/font-changer/)
+* Codepen: [Font Changer](https://codepen.io/mouatezbenariba/pen/JjeRVmB)﻿﻿
 
 ## Give it a Try!
 
