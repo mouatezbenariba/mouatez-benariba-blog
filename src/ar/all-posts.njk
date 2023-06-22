@@ -12,9 +12,11 @@ pagination:
     <h2>تصفح المقالات حسب <a href="/ar/tags/"><span style="color: lightseagreen;">الوسم</span></a></h2>
   <ul class="articles">
       {%- for post in posts | reverse -%}
+      <li>
         {% if post.data.lang == "ar" %}
           {% include "ar/article-snippets.njk" %}
         {% endif %}
+      </li>
       {%- endfor -%}
 
   </ul>

@@ -13,9 +13,11 @@ pagination:
   <h2>Browse Posts by <a href="/tags/"><span style="color: lightseagreen;">tags</span></a></h2>
   <ul class="articles">
       {%- for post in posts | reverse-%}
+      <li>
         {% if post.data.lang == "en" %}
           {% include "article-snippets.njk" %}
         {% endif %}
+      </li>
       {%- endfor -%}
   </ul>
     {% include "pagination.njk" %}
