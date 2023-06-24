@@ -7,7 +7,7 @@ collections:
   - name: 'en-blog'
     label: 'En-Blog'
     folder: 'src/blog/en/'
-    permalink: '/blog/en/{{ date | dateToUrl }}/{{ title | slugify }}'
+    permalink: '/blog/en/{{ year }}/'
     create: true
     slug: '{{slug}}'
     fields:
