@@ -9,7 +9,7 @@ collections:
     folder: 'src/blog/en/'
     create: true
     permalink: '/{{ date | dateToUrl }}/ {{ title | slugify }}/'
-    slug: '{{slugify}}'
+    slug: '{{title | slugify}}'
     fields:
       - { label: 'Language', name: 'lang', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
