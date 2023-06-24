@@ -8,7 +8,7 @@ collections:
     label: 'En-Blog'
     folder: 'src/blog/en/'
     create: true
-    slug: '{{slugify}}'
+    slug: '{{ slug }}'
     fields:
       - { label: 'Language', name: 'lang', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -29,7 +29,7 @@ collections:
     label: 'Ar-Blog'
     folder: 'src/blog/ar/'
     create: true
-    slug: '{{slugify}}'
+    slug: '{{ slug }}'
     fields:
       - { label: 'Language', name: 'lang', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
