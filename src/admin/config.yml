@@ -6,9 +6,9 @@ public_folder: '/assets/images/blog'
 collections:
   - name: 'en-blog'
     label: 'En-Blog'
-    folder: 'src/blog/en/{{year}}/'
+    folder: 'src/blog/en/'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{ date | dateToUrl }}/{{ slug }}'
     fields:
       - { label: 'Language', name: 'lang', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
