@@ -8,7 +8,6 @@ collections:
     label: 'En-Blog'
     folder: 'src/blog/en/'
     create: true
-    # permalink: '/{{ page.date | dateToUrl }}/{{ page.title | slugify }}/'
     slug: '{{slugify}}'
     fields:
       - { label: 'Language', name: 'lang', widget: 'string' }
@@ -30,7 +29,6 @@ collections:
     label: 'Ar-Blog'
     folder: 'src/blog/ar/'
     create: true
-    # permalink: '/{{ page.date | dateToUrl }}/{{ page.title | slugify }}/'
     slug: '{{slugify}}'
     fields:
       - { label: 'Language', name: 'lang', widget: 'string' }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,7 @@
   <meta
   name="description"
   content= ""
-  />
+/>
   <!-- Open Graph Protocol - Facebook-->
   <meta property="og:url" content="https://blog.mouatezbenariba.me/" />
   <meta property="og:type" content="" />
@@ -36,13 +36,13 @@
   <meta name="twitter:title" content="" />
   <meta
     name="twitter:description"
-    content=""
+    content= ""
   />
   <meta
     name="twitter:image"
     content=""
   />
-    <!-- favicons -->
+  <!-- favicons -->
   <link
     rel="apple-touch-icon"
     sizes="57x57"
@@ -116,15 +116,14 @@
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
-
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/assets/syntaxhighlight/prism-gruvbox-dark.css">
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script src="/assets/syntaxhighlight/prism.js"></script>
+  <script src="/assets/syntaxhighlight/prism.js" defer></script>
   <!-- preload font files -->
   <link
     rel="preload"
-    href="/assets/fonts/noto-naskh-arabic/NotoNaskhArabic-Regular.woff2"
+    href="/assets/fonts/cabinet-grotesk/CabinetGrotesk-Regular.woff2"
     as="font"
     type="font/woff2"
     crossorigin
@@ -134,44 +133,64 @@
   <style>
     /* fonts */
     @font-face {
-      font-family: 'NotoNaskhArabic-Regular';
-      src: url(/assets/fonts/noto-naskh-arabic/NotoNaskhArabic-Regular.woff2);
+      font-family: 'CabinetGrotesk-Regular';
+      src: url(/assets/fonts/cabinet-grotesk/CabinetGrotesk-Regular.woff2);
       font-display: optional;
     }
     body {
-      font-family: 'NotoNaskhArabic-Regular', serif;
+      font-family: 'CabinetGrotesk-Regular';
     }
   </style>
 </head>
-<body dir="rtl">
-      <header>
-  <div class="container ar">
-    <a href="/ar/index.html" class="blog-name">مدونة المعتز بالله بن عريبة</a>
+<body>
+    <header>
+  <div class="container">
+    <a href="/index.html" class="blog-name">Mouatez Benariba Blog</a>
     <nav>
       <ul class="nav-list">
-        <li class="nav-list__item"><a href="/index.html">الإنجليزية</a></li>
-        <li class="nav-list__item"><a href="/ar/all-posts/index.html">المقالات</a></li>
-        <li class="nav-list__item"><a href="https://mouatezbenariba.me/">الموقع</a></li>
+        <li class="nav-list__item"><a href="/ar/index.html">Arabic</a></li>
+        <li class="nav-list__item"><a href="/all-posts/index.html">Posts</a></li>
+        <li class="nav-list__item"><a href="https://mouatezbenariba.me/">Portfolio</a></li>
       </ul>
     </nav>
   </div>
 </header>
   <main>
-    <div class="container">
+    <div class="container en">
       <section class="blog-posts">
-  <h1>مقالات موسومة بـ: "featured"</h1></section>
+  <h1>Posts tagged with "sqdfqsdf"</h1>
+        <article class="article">
+  <div class="article__thumbnail">
+    <img src="/assets/images/blog/showhide-paragraph.png" alt="qsf" width="200" />
+  </div>
+  <div class="article__info">
+    <h2 class="article__title">
+      <a href="/blog/en/-4/">sdfsdqf</a>
+    </h2>
+    <p class="article__description">
+      qsf
+    </p>
+    <span class="article__tags">
+      tagged:
+      
+        <span class="tag"><a href="/tags/sqdfqsdf">sqdfqsdf</a></span>
+      
+    </span>
+  </div>
+</article>
+      </section>
 
 <div class="next-previous">
-  <a href="/ar/tags/test-03/">Previous Page</a> 
-  <a href="/ar/tags/test-02/">Next page</a> 
+  <a href="/tags/test/">Previous Page</a> 
+   
 </div>
 
     </div>
   </main>
     <footer class="footer">
-<div class="container ar">
+<div class="container">
         <p class="footer__copyright">
-          © المعتز بالله بن عريبة 2023-اليوم. <b>جميع الحقوق محفوظة.</b>
+          © Elmouatez Billah Benariba 2023-Today. <b>All rights reserved.</b>
         </p>
         <ul class="footer__links">
           <li>
@@ -223,11 +242,14 @@
 </footer>
 
   <script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Your code that uses Prism goes here
   Prism.highlightAll();
+});
 
 let imagesContainers = document.querySelectorAll('p:has(img)');
 let images = document.querySelectorAll('p > img');
-let postLinks = document.querySelectorAll('main a');
+let postLinks = document.querySelectorAll('.article-content__main a');
 
 for (const item of imagesContainers) {
   item.classList.add('img-container');
@@ -242,14 +264,14 @@ for (const item of postLinks) {
 }
 
   if (window.netlifyIdentity) {
-  window.netlifyIdentity.on("init", user => {
-    if (!user) {
-      window.netlifyIdentity.on("login", () => {
-        document.location.href = "/admin/";
-      });
-    }
-  });
-}
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
 </script>
 </body>
 </html>
