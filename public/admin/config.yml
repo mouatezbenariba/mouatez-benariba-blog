@@ -8,7 +8,7 @@ collections:
     label: 'En-Blog'
     folder: 'src/blog/en/{{year}}/{{month}}'
     create: true
-    slug: '{{slug}}'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
       - { label: 'Language', name: 'lang', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
