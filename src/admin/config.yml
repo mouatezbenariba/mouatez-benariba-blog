@@ -6,8 +6,9 @@ public_folder: '/assets/images/blog'
 collections:
   - name: 'en-blog'
     label: 'En-Blog'
-    folder: 'src/blog/en/{{ date | dateToUrl }}'
+    folder: 'src/blog/en/'
     create: true
+    permalink: '/{{ date | dateToUrl }}'
     slug: '{{slugify}}'
     fields:
       - { label: 'Language', name: 'lang', widget: 'string' }
@@ -27,7 +28,7 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'ar-blog'
     label: 'Ar-Blog'
-    folder: 'src/blog/ar/{{ date | dateToUrl }}'
+    folder: 'src/blog/ar/'
     create: true
     slug: '{{slugify}}'
     fields:
