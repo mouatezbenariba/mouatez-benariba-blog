@@ -6,9 +6,9 @@ public_folder: '/assets/images/blog'
 collections:
   - name: 'en-blog'
     label: 'En-Blog'
-    folder: 'src/blog/en/'
+    folder: 'src/blog/en/{{year}}/{{month}}'
     create: true
-    slug: '{{ slug }}'
+    slug: '{{slugify}}'
     fields:
       - { label: 'Language', name: 'lang', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -27,9 +27,9 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'ar-blog'
     label: 'Ar-Blog'
-    folder: 'src/blog/ar/'
+    folder: 'src/blog/ar/{{year}}/{{month}}'
     create: true
-    slug: '{{ slug }}'
+    slug: '{{slugify}}'
     fields:
       - { label: 'Language', name: 'lang', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
