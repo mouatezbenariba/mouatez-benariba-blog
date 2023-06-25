@@ -6,7 +6,7 @@ public_folder: '/assets/images/blog'
 collections:
   - name: 'en-blog'
     label: 'En-Blog'
-    folder: 'src/blog/en/{{year}}/{{month}}'
+    folder: 'src/blog/en/{{fields.year}}/{{fields.month}}'
     create: true
     slug: '{{slug}}'
     fields:
