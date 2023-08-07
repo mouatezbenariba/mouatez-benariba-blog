@@ -10,37 +10,37 @@
   <meta name="author" content="المعتز بالله بن عريبة" />
   <meta
   name="description"
-  content= ""
+  content= "Explore my blog post where I provide a step-by-step breakdown of how I tackled Font Changer Elzero Frontend Challenge."
 />
   <!-- Open Graph Protocol - Facebook-->
   <meta property="og:url" content="https://blog.mouatezbenariba.me/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Create a simple Font Changer - Elzero Frontend Challenges" />
   <meta
     property="og:description"
-    content= ""
+    content= "Explore my blog post where I provide a step-by-step breakdown of how I tackled Font Changer Elzero Frontend Challenge."
   />
   <meta
     property="og:image"
-    content=""
+    content="/assets/images/blog/showhide-paragraph.png"
   />
   <meta
   property="og:image:alt"
-  content=""
+  content="Explore my blog post where I provide a step-by-step breakdown of how I tackled Font Changer Elzero Frontend Challenge."
   />
   <!-- Twitter Tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@mouatezbenariba" />
   <meta name="twitter:creator" content="@mouatezbenariba" />
   <meta name="twitte:creator:id" content="813264913" />
-  <meta name="twitter:title" content="" />
+  <meta name="twitter:title" content="Create a simple Font Changer - Elzero Frontend Challenges" />
   <meta
     name="twitter:description"
-    content= ""
+    content= "Explore my blog post where I provide a step-by-step breakdown of how I tackled Font Changer Elzero Frontend Challenge."
   />
   <meta
     name="twitter:image"
-    content=""
+    content="/assets/images/blog/showhide-paragraph.png"
   />
   <!-- favicons -->
   <link
@@ -128,7 +128,7 @@
     type="font/woff2"
     crossorigin
   />
-  <title></title>
+  <title>Create a simple Font Changer - Elzero Frontend Challenges</title>
   <!-- internal style -->
   <style>
     /* fonts */
@@ -158,18 +158,75 @@
   <main>
     <div class="container en">
       
+<div class="article-content">
+  <div class="article-content__header">
+    <h1>Create a simple Font Changer - Elzero Frontend Challenges</h1>
+    <p>Explore my blog post where I provide a step-by-step breakdown of how I tackled Font Changer Elzero Frontend Challenge.</p>
+    <div class="art-info">
+      <div class="div-author">
+        <figure><img src="/assets/images/personal-image/personal-image.webp" alt="Elmouatez Benariba Personal Image"></figure>
+        <span>Elmouatez Billah Benariba</span>
+      </div>
+      <span class="date">Jun 25, 2023</span>
+    </div>
+  </div>
+  <div class="article-content__main">
+    <h2>Overview on Elzero Frontend Challenges</h2>
+<p>Elzero Frontend Challenges is a collection of coding challenges designed for learners who want to improve their HTML and CSS skills. Created by <a href="https://twitter.com/Osama_Elzero">Osama Mohamed (Elzero)</a>, these challenges are available in the frontend track of <a href="https://elzero.org/tracks/front-end/">Elzero Web School</a>.</p>
+<h2>Understanding the Challenge</h2>
+<p>The <a href="https://elzero.org/frontend-font-changer/">Font Changer Challenge</a> is a straightforward and easy task that involves the following objectives:</p>
 <ul>
-  
-    <li><a href="/tags/html" class="post-tag"> HTML </a></li>
-  
-    <li><a href="/tags/css" class="post-tag"> CSS </a></li>
-  
-    <li><a href="/tags/frontend" class="post-tag"> Frontend </a></li>
-  
-    <li><a href="/tags/elzero-frontend-challenges" class="post-tag"> Elzero-Frontend-Challenges </a></li>
-  
+<li>Creating a Select Box containing a collection of Fonts for selection.</li>
+<li>When any Font is selected, it should be applied directly to the page as shown in the image.</li>
+<li>The task should be implemented in a dynamic manner, so that any Font added to the Select Box is automatically applied.</li>
 </ul>
+<h2>Building the Skelton</h2>
+<p>The Font Changer consists of an input and an output component:</p>
+<ul>
+<li>
+<p><strong>Input:</strong> A select list containing three font options.</p>
+</li>
+<li>
+<p><strong>Output:</strong> A text element where the font-family style will be applied.</p>
+<pre class="language-html" tabindex="0" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>container font-changer<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token comment">&lt;!-- input --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>fonts<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-fonts<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font-changer__list<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Open Sans<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Open Sans<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Metal Mania<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Metal Mania<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Caesar Dressing<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Caesar<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">></span></span>
+  <span class="token comment">&lt;!-- output --></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font-changer__result<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Testing Fonts Here<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+</li>
+</ul>
+<p>To achieve this, I created a select list with three options, each representing a font's value and name. The output component is a div containing the text &quot;Testing Fonts Here.&quot; These elements are encapsulated within a parent div. For consistent and clear class naming, the BEM (Block Element Modifier) methodology was followed.</p>
+<h2>Perfecting the Styling</h2>
+<p>To recreate the provided design, I applied styles to both the select list and the test text.</p>
+<h2>Font Changer Logic</h2>
+<p>Each time the select list value changes, the font-family CSS property of the Test text gets the value of the selected font.</p>
+<h2>JavaScript Implementation</h2>
+<p>First, I searched for the desired fonts on Google Fonts and included them using link tags.</p>
+<p>Second, I set the default font family for the test text as &quot;Open Sans.&quot; This ensures that the text always has a font style applied.</p>
+<p>T﻿hird, I added an event listener to the select. Whenever a change occurs in the select element, the font family of the Test text is updated based on the selected value (Font Name)in the select element. The value attribute of each option in the select element corresponds to the font family declaration provided by Google Fonts.</p>
+<pre class="language-javascript" tabindex="0" data-language="javascript"><code class="language-javascript"><span class="token keyword">const</span> font <span class="token operator">=</span> <span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">getElementById</span><span class="token punctuation">(</span><span class="token string">'text-fonts'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> text <span class="token operator">=</span> <span class="token dom variable">document</span><span class="token punctuation">.</span><span class="token method function property-access">querySelector</span><span class="token punctuation">(</span><span class="token string">'.font-changer__result'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
+font<span class="token punctuation">.</span><span class="token method function property-access">addEventListener</span><span class="token punctuation">(</span><span class="token string">'change'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+  text<span class="token punctuation">.</span><span class="token property-access">style</span><span class="token punctuation">.</span><span class="token property-access">fontFamily</span> <span class="token operator">=</span> e<span class="token punctuation">.</span><span class="token property-access">target</span><span class="token punctuation">.</span><span class="token property-access">value</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2>Links</h2>
+<ul>
+<li>Github: ﻿<a href="https://github.com/mouatezbenariba/Elzero-Frontend-Challenges/tree/main/font-changer">Font Changer</a></li>
+<li>Demo: ﻿<a href="https://mouatezbenariba.github.io/Elzero-Frontend-Challenges/font-changer/">Font Changer</a></li>
+<li>Codepen: <a href="https://codepen.io/mouatezbenariba/pen/JjeRVmB">Font Changer</a></li>
+</ul>
+<h2>Give it a Try!</h2>
+<p>I invite you to rate my work and give it a try yourself. Engaging in frontend challenges like this one can be an excellent opportunity to enhance your skills, expand your knowledge, and improve your problem-solving abilities.</p>
+
+  </div>
+</div>
     </div>
   </main>
     <footer class="footer">
