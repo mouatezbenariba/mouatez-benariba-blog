@@ -1,7 +1,6 @@
 ---
 lang: en
-title: Build a button that shows and hides a paragraph - Elzero Frontend
-  Challenges - Elmouatez Billah Benariba
+title: Build a button that shows and hides a paragraph - Elzero Frontend Challenges
 author: Elmouatez Billah Benariba
 tags:
   - post
