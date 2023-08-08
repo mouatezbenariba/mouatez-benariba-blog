@@ -10,12 +10,12 @@ tags:
   - Frontend
   - Elzero-Frontend-Challenges
 date: 2023-06-25T07:17:10.736Z
-image: /assets/images/blog/show-hide-paragraph.png
 imageAlt: Build a button that shows and hides a paragraph - Elzero Frontend Challenges
 description: Explore my blog post where I provide a step-by-step breakdown of
   how I tackled Show/Hide Paragraph Elzero Frontend Challenge.
 pageDescription: Explore my blog post where I provide a step-by-step breakdown
   of how I tackled Show/Hide Paragraph Elzero Frontend Challenge.
+image: /assets/images/blog/show-hide-paragraph.png
 seoImage: /assets/images/blog/show-hide-paragraph.png
 ---
 ## Overview on Elzero Frontend Challenges
