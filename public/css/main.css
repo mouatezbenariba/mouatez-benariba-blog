@@ -21,7 +21,6 @@
 }
 
 body {
-  background-color: #f5ebff;
   margin: 0;
 }
 
@@ -223,17 +222,19 @@ li:not(:last-child) .article {
 }
 
 .article__title {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   margin: 0.8rem 0;
+  transition-duration: 0.2s;
 }
 
 .article__title:hover a {
   color: var(--purple-300);
+  transition-duration: 0.2s;
 }
 
 .article__description {
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0 0 1rem;
   color: #666;
 }
@@ -356,7 +357,7 @@ figcaption {
 }
 
 .article-content__header h1 {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
 
@@ -364,7 +365,7 @@ figcaption {
   margin-top: 0.5rem;
   margin-bottom: 2rem;
   color: #635555;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .art-info {
@@ -389,8 +390,8 @@ figcaption {
   max-width: 100%;
   border-radius: 0.6rem;
   border: 0.2rem solid #ffd454;
-  -webkit-box-shadow: 0 0 10px 0px #000000;
-  box-shadow: 0 0 10px 0px #000000;
+  -webkit-box-shadow: 0 0 10px 0px #afafaf;
+  box-shadow: 0 0 10px 0px #afafaf;
 }
 
 .div-author {
@@ -473,10 +474,27 @@ h2 {
   header nav {
     margin: 0;
   }
+
   .article {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+  }
+
+  .article__title {
+    font-size: 1.5rem;
+  }
+
+  .article__description {
+    font-size: 1.1rem;
+  }
+
+  .article-content__header h1 {
+    font-size: 2.5rem;
+  }
+
+  .article-content__header p {
+    font-size: 1.3rem;
   }
 }
